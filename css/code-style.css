@@ -1,9 +1,16 @@
 body {
     background: #e6ecee;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
 }
+#some, #hello, #codeDiv {
+    display: block;
+    position: relative;
+}
+#codeDiv{
+    display: flex;
+    width:100%;
+}
+
 
 code {
     max-width: 20rem;

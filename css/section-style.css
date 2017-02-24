@@ -10,15 +10,16 @@ body{
 .innerBox{
     background-color: white;
     font-family: Roboto, serif;
-    height: 90%;
+    height: 50%;
+    width:90%;
     box-shadow: 3px 3px 10px #888888;
-    padding: 20%;
+    padding: 25%;
 }
 
 #includedContent{
     width:80%;
     height:100%;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
 }
