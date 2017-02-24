@@ -2,7 +2,7 @@ body {
     background: #e6ecee;
 
 }
-#some, #hello, .showCode, .writeCode {
+#some, #hello, .showCode, .writeCode, #btn, #test{
     display: block;
     position: relative;
 }
@@ -11,10 +11,17 @@ body {
     width:100%;
 }
 .writeCode{
-    display: flex;
+    display: block;
     width:100%;
 }
+#codeHere{
+    display: flex;
+}
 
+#btn{
+    display: block;
+    width: 20rem;;
+}
 
 code {
     max-width: 20rem;
