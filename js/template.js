@@ -3,5 +3,9 @@
  */
 function getCode(){
     var test=document.getElementById("test").innerHTML;
-    alert(test);
+    var str = 'print "hello"';
+    if(test===str){
+        alert(test);
+    }
+
 }
