@@ -2,11 +2,15 @@ body {
     background: #e6ecee;
 
 }
-#some, #hello, #codeDiv {
+#some, #hello, .showCode, .writeCode {
     display: block;
     position: relative;
 }
-#codeDiv{
+.showCode{
+    display: flex;
+    width:100%;
+}
+.writeCode{
     display: flex;
     width:100%;
 }

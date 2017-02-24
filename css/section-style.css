@@ -10,8 +10,7 @@ body{
 .innerBox{
     background-color: white;
     font-family: Roboto, serif;
-    height: 50%;
-    width:90%;
+
     box-shadow: 3px 3px 10px #888888;
     padding: 25%;
 }
