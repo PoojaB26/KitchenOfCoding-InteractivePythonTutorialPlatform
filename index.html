@@ -2,31 +2,17 @@
 <html>
 <head>
     <title>Frontend Playground</title>
-    <!-- Codemirror -->
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.1.0/codemirror.css' />
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.1.0/codemirror.js'></script>
+    <link rel="stylesheet" type="text/css" href="css/code-style.css">
 
-    <!-- Ractive -->
-    <script src='http://cdn.ractivejs.org/edge/ractive-legacy.js'></script>
 
-    <!-- this plugin -->
-    <script src='https://cdn.rawgit.com/dagnelies/ractive-codemirror/master/src/ractive-codemirror.js'></script>
 </head>
 <body>
-<textarea id="editor" title="editor"></textarea>
+Hello
+<code contentEditable="false">
+    <p>function add(a, b) {</p>
+    <p>  //interesting fun</p>
+    <p id="test">  return a + b;</p>
+    <p>}</p></code>
 </body>
-<script>
-    var editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
-        lineNumbers: true,
-        mode:  "html"
-    });
 
-    function submit_html()
-    {
-        editor.save();
-        var code = document.getElementById("editor").value;
-        var data_url = "data:text/html;charset=utf-8;base64," + $.base64.encode(code);
-        document.getElementById("result").src = data_url;
-    }
-</script>
 </html>
