@@ -5,7 +5,14 @@
 // to a pre element.
 function outf(text) {
     var mypre = document.getElementById("output");
-    mypre.innerHTML = mypre.innerHTML + text;
+    var pres = document.getElementById("ty");
+
+    var out = mypre.innerHTML + text;
+    mypre.innerHTML = out;
+    var textcase = "hello\nhi\n";
+    if(out===textcase){
+        pres.innerHTML = "hi";
+    }
 }
 function builtinRead(x) {
     if (Sk.builtinFiles === undefined || Sk.builtinFiles["files"][x] === undefined)
