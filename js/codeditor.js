@@ -1,6 +1,13 @@
 /**
  * Created by pblead26 on 27-Feb-17.
  */
+
+
+
+
+
+
+
 // output functions are configurable.  This one just appends some text
 // to a pre element.
 function outf(text) {
@@ -9,11 +16,15 @@ function outf(text) {
 
     var out = mypre.innerHTML + text;
     mypre.innerHTML = out;
-    var textcase = "hello\nhi\n";
-    if(out===textcase){
-        pres.innerHTML = "hi";
-    }
+
+    var pattern = /hello$/;
+    var output = pattern.test(out);
+    pres.innerHTML = output;
+
+
 }
+
+
 function builtinRead(x) {
     if (Sk.builtinFiles === undefined || Sk.builtinFiles["files"][x] === undefined)
         throw "File not found: '" + x + "'";
