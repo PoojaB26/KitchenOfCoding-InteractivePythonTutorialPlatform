@@ -1,7 +1,6 @@
 /**
  * Created by pblead26 on 03-Mar-17.
  */
-alert("hi");
 
 function checkConstant(){
     var constOutput = document.getElementById("constantOutput");
@@ -16,6 +15,7 @@ function checkConstant(){
                 case 1: constOutput.innerHTML="We certainly don’t put salt in maggi, as far as I remember";
                         break;
                 case 2: constOutput.innerHTML="That's correct";
+                        next();
                         break;
 
             }
@@ -23,5 +23,9 @@ function checkConstant(){
         }
     }
 
+
+}
+
+function next(){
 
 }
