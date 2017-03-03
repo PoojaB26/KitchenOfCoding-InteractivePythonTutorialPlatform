@@ -17,8 +17,8 @@ function submitForm() {
 
     var selection= findSelection("group1");
     if(selection=="yes")
-        alert("Cool!");
+        window.location.href = 'page2.html';
     else
-        alert("See you next time :)");
+        window.location.href = 'backup.html';
     return true;
 }
