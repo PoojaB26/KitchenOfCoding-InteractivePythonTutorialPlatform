@@ -28,3 +28,7 @@ function checkConstant(){
 function next(){
     section2.style.visibility = 'visible';
 }
+
+function nextPage() {
+    window.location.href = 'page3.html';
+}
