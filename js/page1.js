@@ -16,9 +16,13 @@ function submitForm() {
 
 
     var selection= findSelection("group1");
-    if(selection=="yes")
-        window.location.href = 'page2.html';
-    else
-        window.location.href = 'backup.html';
-    return true;
+    if(selection=="yes"){
+        $(function() {
+            $("#intro").load("page2.html");
+        });    }
+    else{
+        $(function() {
+            $("#intro").load("page2.html");
+        });    }
+
 }
