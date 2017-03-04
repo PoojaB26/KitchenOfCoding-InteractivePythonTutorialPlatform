@@ -3,7 +3,7 @@
  */
 function next(){
     $(function() {
-        $("#content").load("lesson1/page1.html");
+        $("#content").load("page1.html");
     });
 
 }

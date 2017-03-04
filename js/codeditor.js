@@ -3,11 +3,6 @@
  */
 
 
-
-
-
-
-
 // output functions are configurable.  This one just appends some text
 // to a pre element.
 function outf(text) {

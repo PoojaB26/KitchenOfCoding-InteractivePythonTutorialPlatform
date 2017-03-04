@@ -30,5 +30,6 @@ function next(){
 }
 
 function nextPage() {
-    window.location.href = '../page3-s.html';
-}
+    $(function() {
+        $("#page2").load("page3.html");
+    });   }

@@ -11,7 +11,6 @@ function findSelection(field) {
     }
 }
 
-
 function submitForm() {
 
 
@@ -22,7 +21,7 @@ function submitForm() {
         });    }
     else{
         $(function() {
-            $("#intro").load("page2.html");
+            $("#intro").load("backup.html");
         });    }
 
 }
