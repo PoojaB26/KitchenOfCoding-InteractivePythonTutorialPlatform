@@ -30,5 +30,5 @@ function next(){
 }
 
 function nextPage() {
-    window.location.href = 'page3.html';
+    window.location.href = '../page3-s.html';
 }

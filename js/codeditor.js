@@ -19,7 +19,7 @@ function outf(text) {
 
     var pattern = /hello$/;
     var output = pattern.test(out);
-    pres.innerHTML = output;
+    pres.innerHTML = out;
 
 
 }

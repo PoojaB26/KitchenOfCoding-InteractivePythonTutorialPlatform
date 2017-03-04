@@ -34,27 +34,25 @@
        Type 0 for constants and 1 for variables.
        The first one has been done for you
    </p>
+    <form>
+        <textarea id="yourcode" cols="60" rows="10">
+Cooking vessel = False
+Oil
+Salt
+Serving spoon
+#Lets see if you have got it correct
+print(cooking_vessel)
+print(oil)
+print(salt)
+print(serving_spoon)
+        </textarea><br />
+        <button type="button" onclick="runit()">Run</button>
+    </form>
+    <pre id="output" ></pre>
+    <pre id="ty" ></pre>
 
-    <div class="writeCode" ><code contentEditable="true" >
-        <p>cooking_vessel = 0  </p>
-        <p>salt  </p>
-        <p>oil  </p>
-        <p>serving spoon</p></code>
 
 
-    </div><br>
-
-    <input type="button" name="answer" value="Check The Solution" onclick="showDiv()"/>
-    <div id="solution" class="hidden">
-        <div class="writeCode" ><code contentEditable="false" >
-            <p>cooking_vessel = 0  </p>
-            <p>salt = 1 </p>
-            <p>oil = 1 </p>
-            <p>serving spoon = 0</p></code>
-
-
-        </div><br>
-    </div>
     <input type="button" name="section2" value="Continue" onclick="showDiv2()"/>
     <div id="section2" class="hidden">
     <div class="afterClick">
@@ -97,5 +95,6 @@
 
 <script type="text/javascript" src="js/template.js"></script>
 <script src="js/page3.js"></script>
+<script type="text/javascript" src="js/codeditor.js"></script>
 </body>
 </html>
