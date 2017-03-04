@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/code-style.css">
     <link rel="stylesheet" href="css/page3-style.css">
 
+
 </head>
 <body>
 <div id="section1">
@@ -41,14 +42,27 @@
         <p>serving spoon</p></code>
 
 
-        <button id="btn" onclick="getCode()">Click</button>
     </div><br>
 
+    <input type="button" name="answer" value="Check The Solution" onclick="showDiv()"/>
+    <div id="solution" class="hidden">
+        <div class="writeCode" ><code contentEditable="false" >
+            <p>cooking_vessel = 0  </p>
+            <p>salt = 1 </p>
+            <p>oil = 1 </p>
+            <p>serving spoon = 0</p></code>
+
+
+        </div><br>
+    </div>
+    <input type="button" name="section2" value="Continue" onclick="showDiv2()"/>
+    <div id="section2" class="hidden">
     <div class="afterClick">
         <h3>Congratulations! You just learned to declare variables with a value.</h3>
         <p>Now lets boil water. Here we are doing something. In coding language, a function does something. So boil_water() is a function.
 
             On the right is a function written for you.</p>
+
         <div class="showCode"><code contentEditable="false">
             <p>def boil_water():</p>
             <p>  Temp=100C</p>
@@ -59,25 +73,29 @@
         <p>So how about we reuse this same function again?</p>
         <p>On the right we have three quantities of water that you must boil. First one is done for you.
         </p>
+
         <div class="writeCode" ><code id="codeHere" contentEditable="true" onclick="" >
-            <p>##Water = 1 Cup </p>
+            <p>#Water = 1 Cup </p>
             <p>Boil_water()
             </p>
-            <p>## Water = 5ml</p>
-            <p>## boil in the next line
+            <p># Water = 5ml</p>
+            <p># boil in the next line
             </p>
 
-            <p>## Water = 1 litre</p>
-            <p>## boil in the next line
+            <p># Water = 1 litre</p>
+            <p># boil in the next line
             </p>
         </code>
-            <button id="btn" onclick="getCode()">Click</button>
         </div>
+
+        <button id="btn" onclick="getCode()">Click</button>
+    </div>
     </div>
 </div>
 
 
 
 <script type="text/javascript" src="js/template.js"></script>
+<script src="js/page3.js"></script>
 </body>
 </html>

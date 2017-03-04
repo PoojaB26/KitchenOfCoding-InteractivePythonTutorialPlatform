@@ -1,3 +1,9 @@
 #section1{
     display: inline-block;
 }
+.hidden{
+    display: none;
+}
+.unhidden{
+    display: block;
+}
