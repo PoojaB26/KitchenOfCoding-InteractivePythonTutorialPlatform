@@ -2,7 +2,7 @@ body {
     background: #e6ecee;
 
 }
-#some, #hello, .showCode, .writeCode, #code, #btn, #test{
+#some, #hello, .showCode, .writeCode, #code, #btn{
     display: block;
     position: relative;
 }
@@ -11,11 +11,8 @@ body {
     width:100%;
 }
 .writeCode{
-    display: block;
-    width:100%;
-}
-#codeHere{
     display: flex;
+    width:100%;
 }
 
 #btn{
