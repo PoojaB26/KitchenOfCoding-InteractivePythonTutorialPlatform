@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page 7</title>
+    <link rel="stylesheet" type="text/css" href="css/code-style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+    <script src="http://www.skulpt.org/static/skulpt.min.js" type="text/javascript"></script>
+    <script src="http://www.skulpt.org/static/skulpt-stdlib.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/page7-style.css">
+
+</head>
+<body>
+    <div id="section1">
+    <p>
+        Now this function is for boiling water, but we may use the same action for different quantity of water. Would it be efficient to rewrite this same function again and again?
+        No, right?
+        So how about we reuse this same function again?
+
+
+        we have three quantities of water that you have to boil. First one is done for you.</p>
+    <form>
+<textarea id="test_code" cols="40" rows="10">
+
+oil = True
+#Quantity is in cups
+Water = 1
+Boil_water()
+
+#Quantity is in ml
+Water = 5
+#boiling function is called here
+
+#Quantity is in litres
+Water = 1 litre
+#boiling function is called here
+</textarea><br/>
+        <button type="button" onclick="runit()">Run</button>
+    </form>
+    <pre id="output"></pre>
+    <pre id="result"></pre>
+
+    </div>
+
+    <div id="section2">
+
+    <p>
+        Now imagine you are chef helper in a huge restaurant. And today, your primary job is to boil.  That’s a pretty tiring task, right?
+
+        The chef will not be telling you the instructions to boil, every time you are asked to boil something. You are expected to remember the method once told.
+
+        The chef will give you the item and your task is to just put it on stove and boil for 10 minutes at 100 degree celsius and give the boiled item to the next person.
+
+
+        Lets start writing your boiling task as a function
+    </p>
+        <div class="showCode"><code contentEditable="false">
+            <p>Def boil():</p>
+            <p>    Liquid = input()</p>
+            <p>    Temp = 100</p>
+            <p>    print (“boiling completed”)</p>
+            <p>    print(Liquid)
+            </p></code>
+        </div>
+        <button type="button" onclick="showDivGoNext()">Next</button>
+        <br>
+    </div>
+    <div id="GoNext">
+
+    <p>
+        input() is a pre-defined function that takes in values from the user using your program.
+        So if you were to use water as a variable, the user will decide how much water you are to use.
+
+        For example, if you are in a restaurant that only makes omelettes. But you let the customer decide how many eggs they want in a omelette. Then you are taking input from the customer.
+
+
+
+
+
+
+
+        So what’s the result of the program we wrote today.
+        We took a variable cold water as input, we put a function boil_water() and got hot water as an output.
+    </p>
+<form>
+    <textarea id="test_code2" cols="40" rows="10">
+
+cold water = 2
+boil_water()
+#print hot_water
+Print “boiling water is successful”
+#Run the program to see the output
+</textarea><br/>
+
+
+    <button type="button" onclick="runit2()">Run</button>
+    </form>
+    <pre id="output2"></pre>
+    <pre id="result2"></pre>
+
+    </div>
+    <input type="button" value="Next" onclick="nextPage()">
+
+    <script src="js/page7-func.js"></script>
+</body>
+</html>
