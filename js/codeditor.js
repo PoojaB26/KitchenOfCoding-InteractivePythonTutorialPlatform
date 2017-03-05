@@ -31,16 +31,15 @@ function builtinRead(x) {
 // configure the output function
 // call Sk.importMainWithBody()
 function runit() {
-    var prog = document.getElementById("user_code").value;
-    var prog2 = document.getElementById("predefined").value;
-    var finalprog = prog + "\n" + prog2;
+    var userCode = document.getElementById("user_code").value;
+    var PreDefinedCode = document.getElementById("predefined").value;
+    var finalProg = userCode + "\n" + PreDefinedCode;
     var mypre = document.getElementById("output");
     mypre.innerHTML = '';
     Sk.pre = "output";
     Sk.configure({output:outf, read:builtinRead});
-    (Sk.TurtleGraphics || (Sk.TurtleGraphics = {})).target = 'mycanvas';
     var myPromise = Sk.misceval.asyncToPromise(function() {
-        return Sk.importMainWithBody("<stdin>", false, finalprog, true);
+        return Sk.importMainWithBody("<stdin>", false, finalProg, true);
     });
     myPromise.then(function(mod) {
             console.log('success');
