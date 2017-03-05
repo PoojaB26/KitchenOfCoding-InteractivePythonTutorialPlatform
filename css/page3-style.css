@@ -7,3 +7,7 @@
 .unhidden{
     display: block;
 }
+
+#GoNext{
+    visibility: hidden;
+}

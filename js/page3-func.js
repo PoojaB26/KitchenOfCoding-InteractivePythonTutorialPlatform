@@ -3,26 +3,34 @@
  */
 
 function showDiv() {
-    document.getElementById('solution').style.display = "block";
-}
-function showDiv2() {
-    document.getElementById('section2').style.display = "block";
+    document.getElementById('GoNext').style.visibility = "visible";
 }
 
-
+function nextPage() {
+    $(function() {
+        $("#page3").load("page4.html");
+    });   }
 
 // output functions are configurable.  This one just appends some text
 // to a pre element.
 function outf(text) {
-    var mypre = document.getElementById("output");
-    var pres = document.getElementById("ty");
+    var outputText = document.getElementById("output");
+    var resultText = document.getElementById("result");
 
-    var out = mypre.innerHTML + text;
-    mypre.innerHTML = out;
+    var out = outputText.innerHTML + text;
+    outputText.innerHTML = out;
 
     var pattern = /True\nFalse\nTrue/;
     var output = pattern.test(out);
-    pres.innerHTML = output;
+
+    if(output.toString()==="true"){
+        resultText.innerHTML = "Congratulations";
+        showDiv();
+    }
+    else
+    {
+        resultText.innerHTML = "Try Again";
+    }
 
 
 }

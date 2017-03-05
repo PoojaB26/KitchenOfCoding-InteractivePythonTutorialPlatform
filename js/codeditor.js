@@ -6,14 +6,20 @@
 // output functions are configurable.  This one just appends some text
 // to a pre element.
 function outf(text) {
-    var mypre = document.getElementById("output");
-    var pres = document.getElementById("ty");
+    var outputText = document.getElementById("output");
+    var resultText = document.getElementById("result");
 
-    var out = mypre.innerHTML + text;
-    mypre.innerHTML = out;
+    var out = outputText.innerHTML + text;
+    outputText.innerHTML = out;
 
-    var pattern = /hello$/;
+    var pattern = /hello/;
     var output = pattern.test(out);
+    if(output.toString()==="true"){
+        resultText.innerHTML = "Correct";
+    }
+    else{
+        resultText.innerHTML = "Incorrect";
+    }
   //  pres.innerHTML = out;
 
 
