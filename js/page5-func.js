@@ -1,14 +1,14 @@
 /**
- * Created by pblead26 on 04-Mar-17.
+ * Created by pblead26 on 05-Mar-17.
  */
 
 function showSection2() {
-    document.getElementById('section2').style.visibility = "visible";
+    document.getElementById('GoNext').style.visibility = "visible";
 }
 
 function nextPage() {
     $(function() {
-        $("#page4").load("page5-p.html");
+        $("#page5").load("backup.html");
     });   }
 
 // output functions are configurable.  This one just appends some text
@@ -17,9 +17,20 @@ function outf(text) {
     var outputText = document.getElementById("output");
     var resultText = document.getElementById("result");
 
-    outputText.innerHTML = outputText.innerHTML + text;
-    showSection2();
+    var out = outputText.innerHTML + text;
+    outputText.innerHTML = out;
+    // showSection2();
+    var pattern = /(I am a great cook)/;
+    var output = pattern.test(out);
 
+    if(output.toString()==="true"){
+        resultText.innerHTML = "Congratulations";
+        showSection2();
+    }
+    else
+    {
+        resultText.innerHTML = "Try Again";
+    }
 }
 
 
