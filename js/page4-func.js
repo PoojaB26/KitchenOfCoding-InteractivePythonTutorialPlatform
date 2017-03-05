@@ -6,6 +6,10 @@ function showSection2() {
     document.getElementById('section2').style.visibility = "visible";
 }
 
+function showDivGoNext() {
+    document.getElementById('GoNext').style.visibility = "visible";
+}
+
 function nextPage() {
     $(function() {
         $("#page4").load("page5-p.html");
@@ -40,6 +44,31 @@ function runit() {
     mypre.innerHTML = '';
     Sk.pre = "output";
     Sk.configure({output:outf, read:builtinRead});
+    var myPromise = Sk.misceval.asyncToPromise(function() {
+        return Sk.importMainWithBody("<stdin>", false, finalProg, true);
+    });
+    myPromise.then(function(mod) {
+            console.log('success');
+        },
+        function(err) {
+            console.log(err.toString());
+        });
+}
+
+function outf2(text) {
+    var outputText = document.getElementById("output2");
+    var resultText = document.getElementById("result2");
+
+    outputText.innerHTML = outputText.innerHTML + text;
+
+}
+function runit2() {
+
+    var finalProg =  document.getElementById("test_code2").value;
+    var mypre = document.getElementById("output2");
+    mypre.innerHTML = '';
+    Sk.pre = "output2";
+    Sk.configure({output:outf2, read:builtinRead});
     var myPromise = Sk.misceval.asyncToPromise(function() {
         return Sk.importMainWithBody("<stdin>", false, finalProg, true);
     });

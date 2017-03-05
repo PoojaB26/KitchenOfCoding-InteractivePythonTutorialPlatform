@@ -7,11 +7,13 @@
 .unhidden{
     display: block;
 }
-
-#GoNext{
-    visibility: hidden;
-}
-
 #section2{
     visibility: hidden;
 }
+#GoNext{
+    visibility: hidden;
+}
+.section2{
+    display: none;
+}
+
