@@ -14,7 +14,7 @@ function outf(text) {
 
     var pattern = /hello$/;
     var output = pattern.test(out);
-    pres.innerHTML = out;
+  //  pres.innerHTML = out;
 
 
 }
@@ -31,14 +31,16 @@ function builtinRead(x) {
 // configure the output function
 // call Sk.importMainWithBody()
 function runit() {
-    var prog = document.getElementById("yourcode").value;
+    var prog = document.getElementById("user_code").value;
+    var prog2 = document.getElementById("predefined").value;
+    var finalprog = prog + "\n" + prog2;
     var mypre = document.getElementById("output");
     mypre.innerHTML = '';
     Sk.pre = "output";
     Sk.configure({output:outf, read:builtinRead});
     (Sk.TurtleGraphics || (Sk.TurtleGraphics = {})).target = 'mycanvas';
     var myPromise = Sk.misceval.asyncToPromise(function() {
-        return Sk.importMainWithBody("<stdin>", false, prog, true);
+        return Sk.importMainWithBody("<stdin>", false, finalprog, true);
     });
     myPromise.then(function(mod) {
             console.log('success');
