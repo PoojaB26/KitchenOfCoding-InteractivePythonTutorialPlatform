@@ -2,13 +2,13 @@
  * Created by pblead26 on 04-Mar-17.
  */
 
-function showDiv() {
-    document.getElementById('GoNext').style.visibility = "visible";
+function showSection2() {
+    document.getElementById('section2').style.visibility = "visible";
 }
 
 function nextPage() {
     $(function() {
-        $("#page3").load("page4-uselater.html");
+        $("#page4").load("page5.html");
     });   }
 
 // output functions are configurable.  This one just appends some text
@@ -17,21 +17,8 @@ function outf(text) {
     var outputText = document.getElementById("output");
     var resultText = document.getElementById("result");
 
-    var out = outputText.innerHTML + text;
-    outputText.innerHTML = out;
-
-    var pattern = /True\nFalse\nTrue/;
-    var output = pattern.test(out);
-
-    if(output.toString()==="true"){
-        resultText.innerHTML = "Congratulations";
-        showDiv();
-    }
-    else
-    {
-        resultText.innerHTML = "Try Again";
-    }
-
+    outputText.innerHTML = outputText.innerHTML + text;
+    showSection2();
 
 }
 
@@ -47,9 +34,8 @@ function builtinRead(x) {
 // configure the output function
 // call Sk.importMainWithBody()
 function runit() {
-    var userCode = document.getElementById("user_code").value;
-    var PreDefinedCode = document.getElementById("predefined").value;
-    var finalProg = userCode + "\n" + PreDefinedCode;
+
+    var finalProg =  document.getElementById("test_code").value;
     var mypre = document.getElementById("output");
     mypre.innerHTML = '';
     Sk.pre = "output";

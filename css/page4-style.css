@@ -1,0 +1,17 @@
+#section1{
+    display: inline-block;
+}
+.hidden{
+    display: none;
+}
+.unhidden{
+    display: block;
+}
+
+#GoNext{
+    visibility: hidden;
+}
+
+#section2{
+    visibility: hidden;
+}
