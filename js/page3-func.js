@@ -8,7 +8,7 @@ function showDiv() {
 
 function nextPage() {
     $(function() {
-        $("#page3").load("page4-uselater.html");
+        $("#page3").load("page4.html");
     });   }
 
 // output functions are configurable.  This one just appends some text

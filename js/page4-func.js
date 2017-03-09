@@ -12,7 +12,7 @@ function showDivGoNext() {
 
 function nextPage() {
     $(function() {
-        $("#page4").load("page5-p.html");
+        $("#page4").load("page5.html");
     });   }
 
 // output functions are configurable.  This one just appends some text
