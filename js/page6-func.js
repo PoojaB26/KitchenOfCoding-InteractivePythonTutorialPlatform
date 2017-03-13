@@ -8,7 +8,7 @@ function showSection2() {
 
 function nextPage() {
     $(function() {
-        $("#page5").load("page6.html");
+        $("#page5").load("page7.html");
     });   }
 
 // output functions are configurable.  This one just appends some text
@@ -19,8 +19,9 @@ function outf(text) {
 
     var out = outputText.innerHTML + text;
     outputText.innerHTML = out;
+    showSection2();
     // showSection2();
-    var pattern = /(I am a great cook)/;
+    /*var pattern = /(I am a great cook)/;
     var output = pattern.test(out);
 
     if(output.toString()==="true"){
@@ -30,7 +31,7 @@ function outf(text) {
     else
     {
         resultText.innerHTML = "Try Again";
-    }
+    }*/
 }
 
 
