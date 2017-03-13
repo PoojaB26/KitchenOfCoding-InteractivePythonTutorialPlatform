@@ -1,20 +1,39 @@
 /**
- * Created by meow on 3/5/2017.
+ * Created by pblead26 on 04-Mar-17.
  */
-function showSection2() {
+
+function showDiv() {
     document.getElementById('section2').style.visibility = "visible";
 }
 
-function showDivGoNext() {
-    document.getElementById('GoNext').style.visibility = "visible";
-}
+function nextPage() {
+    $(function() {
+        $("#page7").load("backup.html");
+    });   }
 
+// output functions are configurable.  This one just appends some text
+// to a pre element.
 function outf(text) {
     var outputText = document.getElementById("output");
     var resultText = document.getElementById("result");
 
-    outputText.innerHTML = outputText.innerHTML + text;
-    showSection2();
+    var out = outputText.innerHTML + text;
+    outputText.innerHTML = out;
+    showDiv()
+/*
+    var pattern = /True\nFalse\nTrue/;
+    var output = pattern.test(out);
+
+    if(output.toString()==="true"){
+        resultText.innerHTML = "Congratulations";
+        showDiv();
+    }
+    else
+    {
+        resultText.innerHTML = "Try Again";
+    }
+
+*/
 
 }
 
@@ -30,37 +49,13 @@ function builtinRead(x) {
 // configure the output function
 // call Sk.importMainWithBody()
 function runit() {
-
-    var finalProg =  document.getElementById("test_code").value;
+    var userCode = document.getElementById("user_code").value;
+    var PreDefinedCode = document.getElementById("predefined").value;
+    var finalProg = PreDefinedCode + "\n" + userCode;
     var mypre = document.getElementById("output");
     mypre.innerHTML = '';
     Sk.pre = "output";
     Sk.configure({output:outf, read:builtinRead});
-    var myPromise = Sk.misceval.asyncToPromise(function() {
-        return Sk.importMainWithBody("<stdin>", false, finalProg, true);
-    });
-    myPromise.then(function(mod) {
-            console.log('success');
-        },
-        function(err) {
-            console.log(err.toString());
-        });
-}
-
-function outf2(text) {
-    var outputText = document.getElementById("output2");
-    var resultText = document.getElementById("result2");
-
-    outputText.innerHTML = outputText.innerHTML + text;
-
-}
-function runit2() {
-
-    var finalProg =  document.getElementById("test_code2").value;
-    var mypre = document.getElementById("output2");
-    mypre.innerHTML = '';
-    Sk.pre = "output2";
-    Sk.configure({output:outf2, read:builtinRead});
     var myPromise = Sk.misceval.asyncToPromise(function() {
         return Sk.importMainWithBody("<stdin>", false, finalProg, true);
     });
