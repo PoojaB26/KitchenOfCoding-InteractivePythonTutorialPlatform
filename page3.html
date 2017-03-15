@@ -2,6 +2,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="css/code-style.css">
     <link rel="stylesheet" href="css/page3-style.css">
+    <link rel="stylesheet" href="css/code-format.css">
 
 
     <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -15,35 +16,37 @@
 <body>
 <div id="page3">
 <div id="section1">
-   <p>So there you go. You learn what constants are in a program.</p>
+   <p>So there you go. You learn what <i class="code">constants</i> are in a program.<br>
+<br>
+       Now lets get back to boiling. <br>
+       We need <b>water</b> for boiling<br>
 
-       <p>Now lets get back to boiling.
-       So we need water now.</p>
+       If I’m making tea for 2 people,<br>
+       I will be needing <b>2 cups</b> of water.<br><br>
 
-       <p>If I’m making tea for 2 people,<br>
-       I will be needing <b>2 cups</b> of water.</p>
+       But when I’m making rice for 4 people,<br>
+       I might need <b>4 glasses</b> of water<br><br>
 
-       <p>But when I’m making rice for 4 people,<br>
-       I might need <b>4 glasses</b> of water</p>
+       Or when I’m making chutney for 2 people,<br>
+       I will need <b>1 teaspoon</b> of water<br><br>
 
-       <p>Or when I’m making chutney for 2 people,<br>
-       I will need <b>1 teaspoon</b> of water</p>
+       So one dish may require 2 cups of water, another dish may require 5.
+       You see, how the quantity could vary?<br>
+       In coding language, we can say water is a <i class="code">Variable</i>. It varies for dish to dish. <br><br>
 
-       <p>So one dish may require 2 cups of water, another dish may require 5.
-       You see, how the quantity could vary?</p>
-       <p>In coding language, we can say water is a VARIABLE. It varies for dish to dish.</p>
+       Now that you know about variables and constants, can you tell me which of the following is a variable or constant?<br>
 
-       <p>Now that you know about variables and constants, can you tell me which of the following is a variable or constant?<br>
+       If it is a <i class="code">variable</i>, write <b>True.</b> If it is a <i class="code">constant</i>, write <b>False</b></p>
+    <p class="remark">Note: Values in Python are case sensitive. True is not the same <i><b>true</b></i> or <i><b>tRUe.</b></i> So keep that in mind.</p>
 
-       If it is a variable, write <b>True.</b> If it is a constant, write <b>False</b></p>
-       <p>The first one has been done for you
+
+    <p class="footnote">
+       The first one has been done for you<br>
    </p>
 
-    <p>Note: Values in Python are case sensitive. True is not the same true or tRUe. So keep that in mind.</p>
 </div>
     <div id="workingCode">
 
-<h3>Try This</h3>
 <form>
 <textarea id="user_code" cols="40" rows="10">
 
@@ -60,15 +63,16 @@ print(cooking_vessel)
 print(salt)
 
 </textarea><br/>
-    <button type="button" onclick="runit()">Run</button>
+    <button class="btnResult" type="button" onclick="runit()"><span>Run</span></button>
+
 </form>
-<pre id="output"></pre>
-<pre id="result" ></pre>
+<p hidden id="output"></p>
+<p id="result" ></p>
 
     </div>
 <div id="GoNext">
-        <h4>Congratulations! You just learned to declare variables with a value.</h4>
-    <input type="button" value="Next" onclick="nextPage()">
+        <p class="remark">Congratulations! You just learned to declare variables with a value.</p>
+    <button class="btn" type="button" onclick="nextPage()"><span>Proceed</span></button>
 </div>
 </div>
 <script type="text/javascript" src="js/page3-func.js"></script>

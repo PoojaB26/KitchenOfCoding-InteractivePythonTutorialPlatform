@@ -24,7 +24,7 @@ function outf(text) {
     var output = pattern.test(out);
 
     if(output.toString()==="true"){
-        resultText.innerHTML = "Congratulations";
+        resultText.innerHTML = "That is right!";
         showDiv();
     }
     else
