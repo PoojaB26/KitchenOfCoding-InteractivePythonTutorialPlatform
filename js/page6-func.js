@@ -8,7 +8,7 @@ function showSection2() {
 
 function nextPage() {
     $(function() {
-        $("#page5").load("page7.html");
+        $("#page6").load("page7.html");
     });   }
 
 // output functions are configurable.  This one just appends some text

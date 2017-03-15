@@ -6,6 +6,7 @@
     <script src="skulpt/skulpt.min.js" type="text/javascript"></script>
     <script src="skulpt/skulpt-stdlib.js" type="text/javascript"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/code-format.css">
 
 
 </head>
@@ -13,9 +14,9 @@
 <body>
 <div id="page6">
     <p>Now finally lets boil water. Here we are doing a task.<br>
-        In coding language, a function does a task.<br><br>
+        In coding language, a <i class="code">function</i> does a task.<br><br>
 
-        Below is a function written for you.</p><br>
+        Below is a <i class="code">function</i> written for you.</p><br>
 
     <div class="showCode"><code contentEditable="false">
         <p>def boil_water():</p>
@@ -24,16 +25,16 @@
         <p>   print("Boiling water successful")</p>
     </code>
     </div>
-    <p>Anything after <i>def</i> and before <i>():</i> is a function.
-        So boil_water is the name of the function.<br>
+    <p>Anything after <i class="code">def</i> and before <i class="code">():</i> is a <i class="code">function</i>.
+        So <i class="code">boil_water</i> is the name of the function.<br>
         What task will this function carry?<br><br>
-        You’re right. It will boil water.
+        You’re right. It will boil water.<br><br>
 
         In the above code snippet, we have only defined what the function or task does. Nobody is yet doing it.<br>
     </p>
     <p>
         To actually do a task,
-        We CALL the function. Like this
+        We <i class="code">call</i> the function. <br> Like this.
 
     </p>
 
@@ -43,7 +44,7 @@
     </div>
 
     <p>
-        Why dont you try calling functions for the next task or function
+        Why dont you try calling functions for the next task or function?
 
     </p>
     <div id="workingCode">
@@ -63,8 +64,8 @@ def boil_milk():
 </textarea><br/>
             <button type="button" onclick="runit()">Run</button>
         </form>
-        <pre id="output"></pre>
-        <pre id="result" ></pre>
+        <p id="output"></p>
+        <p id="result" ></p>
 
     </div>
     <div id="GoNext">
