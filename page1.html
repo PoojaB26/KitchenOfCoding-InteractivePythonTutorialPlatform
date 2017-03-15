@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Page one</title>
@@ -11,24 +11,24 @@
     <script src="skulpt/skulpt.min.js" type="text/javascript"></script>
     <script src="skulpt/skulpt-stdlib.js" type="text/javascript"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/code-format.css">
 
 </head>
 <body>
     <div id="intro">
-        <p>Welcome to the first lesson of kitchen of coding.
-            In the next few weeks, you get to make food for your family while you secretly learn to code.</p>
+        <p>Welcome to the first lesson of kitchen of coding.<br><br>
 
-        <p>In your house, you are the cook who buys, prepares, and mixes the ingredients into a beautiful delicious dish that is served on the dinner table for your family to enjoy.
-        In a similar manner, in the coding world, you cook your own programs and the world enjoys it.
-            </p>
-        <p>Lets move onto our very first lesson</p>
-            <p>Lets boil some water and teach you the basics of programming.</p>
+        In your house, you are the cook who buys, prepares, and mixes the ingredients into a beautiful delicious dish that is served on the dinner table for your family to enjoy.<br>
+        In a similar manner, in the coding world, you cook your own programs and the world enjoys it.<br><br>
 
-        <form action="#" name="theForm" method="post">
-            <input type="radio" name="group1" value="yes">Proceed<br><br>
-            <input type="radio" name="group1" value="no">No, I don't want to.<hr>
+      Lets move onto our very first lesson<br><br>
+          Lets boil some water and teach you the basics of programming.</p>
+
+        <form action="#" id="form" name="proceedForm" method="post">
+            <input type="radio" name="proceed" value="yes">Proceed<br><br>
+            <input type="radio" name="proceed" value="no">No, I don't want to.<hr>
         </form>
-        <button  onclick="return submitForm();">Next</button>
+        <button class="btn" type="button" onclick="return submitForm();"><span>NEXT</span></button>
 
 
     </div>

@@ -1,0 +1,89 @@
+@font-face { font-family: Roboto; src: url('Roboto.ttf'); }
+p
+{ font-family: Roboto, sans-serif; }
+
+.code{
+    border-radius: 2rem 2rem / 2rem 2rem;
+    padding-left: 1.5mm;
+    padding-right: 1.5mm;
+    padding-bottom: .5mm;
+
+    background: rgba(0, 0, 0, 0.11);
+}
+
+
+.remark{
+    padding: 2mm;
+
+    background: rgba(207, 200, 255, 0.58);
+}
+
+.footnote{
+    color: rgba(49, 51, 53, 0.55);
+}
+.btn {
+    position: relative;
+    font-size: medium;
+    display: block;
+    padding: 0;
+
+    overflow: hidden;
+
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+
+    background-color: #2ecc71;
+    color: #ecf0f1;
+
+    transition: background-color .3s;
+}
+
+.btn:hover, .btn:focus {
+    background-color: #27ae60;
+}
+
+.btn span {
+    display: block;
+    padding: 6px 24px;
+}
+
+
+
+.btnResult {
+    position: relative;
+
+    display: block;
+    padding: 0;
+
+    overflow: hidden;
+
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+
+    background-color: #3e89cc;
+    color: #ecf0f1;
+
+    transition: background-color .3s;
+}
+
+.btnResult:hover, .btnResult:focus {
+    background-color: #4086ae;
+}
+
+.btnResult span {
+    display: block;
+    padding: 6px 32px;
+}
+
+
+#section2, #constantOutput{
+    visibility: hidden;
+}
+
+
+
+

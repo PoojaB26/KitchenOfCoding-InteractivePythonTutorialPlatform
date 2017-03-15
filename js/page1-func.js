@@ -14,7 +14,7 @@ function findSelection(field) {
 function submitForm() {
 
 
-    var selection= findSelection("group1");
+    var selection= findSelection("proceed");
     if(selection=="yes"){
         $(function() {
             $("#intro").load("page2.html");
