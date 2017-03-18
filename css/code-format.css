@@ -22,9 +22,10 @@ p
     color: rgba(49, 51, 53, 0.55);
 }
 .btn {
+    width: 8%;
     position: relative;
-    font-size: medium;
-    display: block;
+    font-size: large;
+    display: flex;
     padding: 0;
 
     overflow: hidden;
@@ -54,8 +55,9 @@ p
 .btnResult {
     position: relative;
 
-    display: block;
-    padding: 0;
+    display: flex;
+    width: 80px;
+   margin-top: 5px;
 
     overflow: hidden;
 
