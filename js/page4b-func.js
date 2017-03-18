@@ -12,7 +12,7 @@ function showDivGoNext() {
 
 function nextPage() {
     $(function() {
-        $("#page4").load("page4b.html");
+        $("#page4b").load("page5.html");
     });   }
 
 // output functions are configurable.  This one just appends some text
@@ -44,31 +44,6 @@ function runit() {
     mypre.innerHTML = '';
     Sk.pre = "output";
     Sk.configure({output:outf, read:builtinRead});
-    var myPromise = Sk.misceval.asyncToPromise(function() {
-        return Sk.importMainWithBody("<stdin>", false, finalProg, true);
-    });
-    myPromise.then(function(mod) {
-            console.log('success');
-        },
-        function(err) {
-            console.log(err.toString());
-        });
-}
-
-function outf2(text) {
-    var outputText = document.getElementById("output2");
-    var resultText = document.getElementById("result2");
-
-    outputText.innerHTML = outputText.innerHTML + text;
-
-}
-function runit2() {
-
-    var finalProg =  document.getElementById("test_code2").value;
-    var mypre = document.getElementById("output2");
-    mypre.innerHTML = '';
-    Sk.pre = "output2";
-    Sk.configure({output:outf2, read:builtinRead});
     var myPromise = Sk.misceval.asyncToPromise(function() {
         return Sk.importMainWithBody("<stdin>", false, finalProg, true);
     });
