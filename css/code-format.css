@@ -22,14 +22,15 @@ p
     color: rgba(49, 51, 53, 0.55);
 }
 .btn {
-    width: 8%;
     position: relative;
     font-size: large;
     display: flex;
     padding: 0;
 
     overflow: hidden;
-
+    width: 100%;
+    min-width: 13%;
+    max-width: 18%;
     border-width: 0;
     outline: none;
     border-radius: 2px;
@@ -48,19 +49,20 @@ p
 .btn span {
     display: block;
     padding: 6px 24px;
+    text-align: center;
+    margin: auto;
 }
 
 
 
 .btnResult {
     position: relative;
-
     display: flex;
-    width: 80px;
-   margin-top: 5px;
-
+    padding: 0;
     overflow: hidden;
-
+    width: 100%;
+    min-width: 16%;
+    max-width: 18%;
     border-width: 0;
     outline: none;
     border-radius: 2px;
@@ -77,8 +79,10 @@ p
 }
 
 .btnResult span {
-    display: block;
-    padding: 6px 32px;
+    display: inline-block;
+    padding: 6px 6px;
+    text-align: center;
+    margin: auto;
 }
 
 
