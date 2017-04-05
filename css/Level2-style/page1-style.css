@@ -1,0 +1,21 @@
+#section1{
+    display: inline-block;
+}
+.hidden{
+    display: none;
+}
+.unhidden{
+    display: block;
+}
+#section2{
+    visibility: hidden;
+}
+#GoNext{
+    visibility: hidden;
+}
+#hint{
+    visibility: hidden;
+}
+#retry{
+    visibility: hidden;
+}
