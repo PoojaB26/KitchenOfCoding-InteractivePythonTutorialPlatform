@@ -8,7 +8,7 @@ function showDiv() {
 
 function nextPage() {
     $(function() {
-        $("#page3").load("page4.html");
+        $("#page1").load("page2.html");
     });   }
 
 // output functions are configurable.  This one just appends some text
@@ -20,7 +20,7 @@ function outf(text) {
     var out = outputText.innerHTML + text;
     outputText.innerHTML = out;
 
-    var pattern = /Tea Powder = 2\nSugar = 2\nMilk = 1\nWater = 0.25/;
+    var pattern = /5.25/;
     var output = pattern.test(out);
 
     if(output.toString()==="true"){

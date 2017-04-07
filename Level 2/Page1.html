@@ -5,9 +5,9 @@
     <title>Page one</title>
 
 
-    <link rel="stylesheet" type="text/css" href="../css/Level1-style/code-style.css">
-    <link rel="stylesheet" href="../css/Level1-style/page3-style.css">
-    <link rel="stylesheet" href="../css/Level1-style/code-format.css">
+    <link rel="stylesheet" type="text/css" href="../css/code-style.css">
+    <link rel="stylesheet" href="../css/Level2-style/page1-style.css">
+    <link rel="stylesheet" href="../css/code-format.css">
 
 
     <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -19,13 +19,15 @@
 
 </head>
 <body>
+<div id="page1">
+
 <div id="intro">
     <p>Hi. In the last level, we learnt about variables, constants, function calling, printing, etc while we were boiling water.<br><br>
 
         Today we are making <b>ginger tea</b>.<br><br>
 
         You know that variables of a program are just like ingredients of a recipe, right?
-        Let us list our variables, then.<br><br>
+        Let us list our variables, then.<br><br></p>
         <ul>
             <li>Tea powder = 2 teaspoons</li>
             <li>Sugar = 2 teaspoons</li>
@@ -33,7 +35,7 @@
             <li>Water = 0.25 cup
         </li>
         </ul>
-
+<p>
         <br><br>
         Now that you know how to declare a variable, why don’t you go ahead and
         declare these ingredients as variables for our ginger tea program?<br><br>
@@ -47,23 +49,24 @@
 
 #following ingredients are measured in teaspoons
 
-
+tea_powder = 2
+sugar = 2
+milk= 1
+water = 0.25
 #following ingredients are measured in cups
 
 </textarea><br/>
 
             <textarea id="predefined" hidden cols="40" rows="10">
 
-print("Tea Powder = ", tea_powder)
-print("Sugar = ",sugar)
-print("Milk = ",milk)
-print("Water = ",water)
+print (tea_powder + sugar + milk + water)
+
 
 </textarea><br/>
             <button class="btnResult" type="button" onclick="runit()"><span>Run</span></button>
 
         </form>
-        <p hidden id="output"></p>
+        <p id="output"></p>
         <p id="result" ></p>
 
     </div>
@@ -88,6 +91,7 @@ print("Water = ",water)
 
 
 </div>
+    </div>
 <script src="../js/Level2-func/page1-func.js"></script>
 </body>
 </html>
