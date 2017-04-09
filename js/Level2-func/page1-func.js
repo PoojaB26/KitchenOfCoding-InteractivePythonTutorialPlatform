@@ -2,8 +2,8 @@
  * Created by pblead26 on 04-Mar-17.
  */
 
-function showDiv() {
-    document.getElementById('GoNext').style.visibility = "visible";
+function showDivGoNext() {
+    document.getElementById('go-next').style.visibility = "visible";
 }
 
 function nextPage() {
@@ -14,18 +14,18 @@ function nextPage() {
 // output functions are configurable.  This one just appends some text
 // to a pre element.
 function outf(text) {
-    var outputText = document.getElementById("output");
-    var resultText = document.getElementById("result");
+    var outputText = document.getElementById("code-output");
+    var resultText = document.getElementById("code-remark");
 
     var out = outputText.innerHTML + text;
     outputText.innerHTML = out;
 
     var pattern = /5.25/;
     var output = pattern.test(out);
-
+/*TODO : use case when variable being called is not even present */
     if(output.toString()==="true"){
         resultText.innerHTML = "That is right!";
-        showDiv();
+        showDivGoNext();
     }
     else
     {
@@ -47,12 +47,12 @@ function builtinRead(x) {
 // configure the output function
 // call Sk.importMainWithBody()
 function runit() {
-    var userCode = document.getElementById("user_code").value;
+    var userCode = document.getElementById("user-code").value;
     var PreDefinedCode = document.getElementById("predefined").value;
     var finalProg = userCode + "\n" + PreDefinedCode;
-    var mypre = document.getElementById("output");
+    var mypre = document.getElementById("code-output");
     mypre.innerHTML = '';
-    Sk.pre = "output";
+    Sk.pre = "code-output";
     Sk.configure({output:outf, read:builtinRead});
     var myPromise = Sk.misceval.asyncToPromise(function() {
         return Sk.importMainWithBody("<stdin>", false, finalProg, true);

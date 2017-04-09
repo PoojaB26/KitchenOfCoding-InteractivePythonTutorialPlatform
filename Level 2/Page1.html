@@ -14,14 +14,14 @@
     <script src="../skulpt/skulpt.min.js" type="text/javascript"></script>
     <script src="../skulpt/skulpt-stdlib.js" type="text/javascript"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-
+    <link rel="stylesheet" href="../css/elements-style.css">
 
 
 </head>
 <body>
 <div id="page1">
 
-<div id="intro">
+<div id="section1">
     <p>Hi. In the last level, we learnt about variables, constants, function calling, printing, etc while we were boiling water.<br><br>
 
         Today we are making <b>ginger tea</b>.<br><br>
@@ -42,10 +42,10 @@
     <b>Note</b> : Variable names do not have spaces. To separate words, add an underscore like this <i>tea_powder</i>
     </p>
 
-    <div id="workingCode">
+    <div id="working-code">
 
         <form>
-<textarea id="user_code" cols="40" rows="10">
+<textarea id="user-code" cols="40" rows="10">
 
 #following ingredients are measured in teaspoons
 
@@ -63,15 +63,15 @@ print (tea_powder + sugar + milk + water)
 
 
 </textarea><br/>
-            <button class="btnResult" type="button" onclick="runit()"><span>Run</span></button>
+            <button class="btn-result" type="button" onclick="runit()"><span>Run</span></button>
 
         </form>
-        <p id="output"></p>
-        <p id="result" ></p>
+        <p hidden id="code-output"></p>
+        <p id="code-remark" ></p>
 
     </div>
 
-    <div id="GoNext">
+    <div id="go-next">
         <p class="remark">Great job!</p>
         <button class="btn" type="button" onclick="nextPage()"><span>Proceed</span></button>
     </div>
