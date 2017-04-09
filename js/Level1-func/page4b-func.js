@@ -2,12 +2,9 @@
  * Created by pblead26 on 04-Mar-17.
  */
 
-function showSection2() {
-    document.getElementById('section2').style.visibility = "visible";
-}
 
 function showDivGoNext() {
-    document.getElementById('GoNext').style.visibility = "visible";
+    document.getElementById('go-next').style.visibility = "visible";
 }
 
 function nextPage() {
@@ -18,11 +15,11 @@ function nextPage() {
 // output functions are configurable.  This one just appends some text
 // to a pre element.
 function outf(text) {
-    var outputText = document.getElementById("output");
-    var resultText = document.getElementById("result");
+    var outputText = document.getElementById("code-output");
+    var resultText = document.getElementById("code-remark");
 
     outputText.innerHTML = outputText.innerHTML + text;
-    showSection2();
+    showDivGoNext();
 
 }
 
@@ -39,10 +36,10 @@ function builtinRead(x) {
 // call Sk.importMainWithBody()
 function runit() {
 
-    var finalProg =  document.getElementById("test_code").value;
-    var mypre = document.getElementById("output");
+    var finalProg =  document.getElementById("test-code").value;
+    var mypre = document.getElementById("code-output");
     mypre.innerHTML = '';
-    Sk.pre = "output";
+    Sk.pre = "code-output";
     Sk.configure({output:outf, read:builtinRead});
     var myPromise = Sk.misceval.asyncToPromise(function() {
         return Sk.importMainWithBody("<stdin>", false, finalProg, true);

@@ -17,11 +17,11 @@ function submitForm() {
     var selection= findSelection("proceed");
     if(selection=="yes"){
         $(function() {
-            $("#intro").load("page2.html");
+            $("#page1").load("page2.html");
         });    }
     else{
         $(function() {
-            $("#intro").load("backup.html");
+            $("#page1").load("decline.html");
         });    }
 
 }

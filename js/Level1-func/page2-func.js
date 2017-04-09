@@ -2,7 +2,7 @@
  * Created by pblead26 on 03-Mar-17.
  */
 var section2 = document.getElementById('section2');
-var constOutput = document.getElementById("constantOutput");
+var constOutput = document.getElementById("radio-output");
 
 function checkConstant(){
 

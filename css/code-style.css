@@ -2,11 +2,11 @@ body {
     background: #e6ecee;
 
 }
-#some, #hello, .showCode, .writeCode, #code, #btn{
+#some, #hello, .show-code, .writeCode, #code, #btn{
     display: block;
     position: relative;
 }
-.showCode{
+.show-code{
     display: flex;
     width:100%;
 }

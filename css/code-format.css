@@ -2,6 +2,26 @@
 p
 { font-family: Roboto, sans-serif; }
 
+
+#section1{
+    display: inline-block;
+}
+
+#section2, #radio-output, #go-next{
+    visibility: hidden;
+}
+
+
+
+.note{
+    padding: 2mm;
+    background: rgba(207, 200, 255, 0.58);
+}
+/* positive negative remarks for the code that is being run*/
+#code-remark{
+    padding: 2mm;
+}
+
 .code{
     border-radius: 2rem 2rem / 2rem 2rem;
     padding-left: 1.5mm;
@@ -12,83 +32,12 @@ p
 }
 
 
-.remark{
-    padding: 2mm;
-
-    background: rgba(207, 200, 255, 0.58);
-}
 
 .footnote{
     color: rgba(49, 51, 53, 0.55);
 }
-.btn {
-    position: relative;
-    font-size: large;
-    display: flex;
-    padding: 0;
-
-    overflow: hidden;
-    width: 100%;
-    min-width: 13%;
-    max-width: 18%;
-    border-width: 0;
-    outline: none;
-    border-radius: 2px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
-
-    background-color: #2ecc71;
-    color: #ecf0f1;
-
-    transition: background-color .3s;
-}
-
-.btn:hover, .btn:focus {
-    background-color: #27ae60;
-}
-
-.btn span {
-    display: block;
-    padding: 6px 24px;
-    text-align: center;
-    margin: auto;
-}
 
 
-
-.btnResult {
-    position: relative;
-    display: flex;
-    padding: 0;
-    overflow: hidden;
-    width: 100%;
-    min-width: 16%;
-    max-width: 18%;
-    border-width: 0;
-    outline: none;
-    border-radius: 2px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
-
-    background-color: #3e89cc;
-    color: #ecf0f1;
-
-    transition: background-color .3s;
-}
-
-.btnResult:hover, .btnResult:focus {
-    background-color: #4086ae;
-}
-
-.btnResult span {
-    display: inline-block;
-    padding: 6px 6px;
-    text-align: center;
-    margin: auto;
-}
-
-
-#section2, #constantOutput{
-    visibility: hidden;
-}
 
 
 

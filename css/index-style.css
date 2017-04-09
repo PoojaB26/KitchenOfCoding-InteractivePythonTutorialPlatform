@@ -1,5 +1,3 @@
-
-
 body{
     color: black;
     padding: 10%;
@@ -7,7 +5,7 @@ body{
     font-family: "Times New Roman", sans-serif;
 }
 
-.innerBox{
+.inner-box{
     background-color: white;
     font-family: Roboto, serif;
 
@@ -15,7 +13,7 @@ body{
     padding: 5%;
 }
 
-#includedContent{
+#included-content{
     width:80%;
     height:100%;
     display: block;
