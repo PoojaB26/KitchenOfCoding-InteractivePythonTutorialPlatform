@@ -31,7 +31,7 @@ Example : ```<div id="page2"></div>```
 
 - Any extra information that is not very important, like "first one is done for you" ```<p class="footnote">```
 
-- div wrap for code run ```<div id="working-code">
+- div wrap for code run ```<div id="working-code">```
 
 - textarea for user code ```<textarea id="user-code">```
 
