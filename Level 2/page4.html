@@ -17,15 +17,90 @@
     <div id="section1">
         <p> Before we proceed, let me ask you,<br>
             why do we use functions in the first place?<br><br>
-
-
-
         </p>
+        <form id="form">
+            <input type="radio" name="check-ans" value="one">To define a task<br>
+            <input type="radio" name="check-ans" value="two">To separate lines of code<br>
+            <input type="radio" name="check-ans" value="three">To reuse a set of actions for later<br>
+            <input type="radio" name="check-ans" value="four">All of the above<br>
+        </form>
+        <button class="btn-result" type="button" onclick="checkAnswer()"><span>CHECK</span></button>
+        <p class="radio-remark" id="radio-output"></p>
+    </div>
+    <div id="section2">
+        <p>
+            <br><br>
+            Lines of code that can be executed as a unit is called a code block.<br>
+
+            When you call a function, all the lines of code defined in a function are automatically called. So a function defines a code block. And to define a code block, we use indentation to separate it from the rest of the lines of code.<br><br>
+
+            Let's start redefining our boil() function.<br><br>
+
+            def marks the start of the function header. We write the name of the function next. You can call your function anything as long as it correctly defines the purpose of the function.<br><br>
+            Fun fact : Function names are mostly verbs.<br><br>
+            End the function header with a <b><i>:</i></b>
+            <br><br>
+            Any code with indentation under the function header is part of the function now.<br><br>
+
+            Now its time to rewrite the function boil().<br><br>
+
+            Take note of the following instructions:<br>
+             -   Function name must be boil() as we are going to use this function for later lessons<br>
+             -   Inside the function, declare a variable named <i>output</i> with any value and print “boiling successful”<br>
+             -   You can add more print statements as well.<br>
+             -   At the end , just add the following code :<br>
+             -   return output<br>
+            We will explain this part after you successfully run the code<br>
+        </p>
+
+    <div class="container">
+        <div id="code-editor" >
+            <form>
+<textarea id="test-code">
+
+#Write code here
+</textarea><br/>
+
+            </form>
+            <button class="btn-result" type="button" onclick="runit()"><span>Run</span></button>
+
+        </div>
+
+
+        <div class="console-show">
+            <div id='bar'>
+                <div id='controls'>
+                    <div class='c'><p class='control'>&times;</p></div>
+                    <div class='c'><p class='control'>&minus;</p></div>
+                </div>
+                <p id='title'>Python Console</p>
+            </div>
+            <div id='screen'>
+                <p id="code-output">
+
+                    Output
+                </p>
+            </div>
+
+
+        </div>
     </div>
 
+    <div id="working-code">
 
+        <p id="code-remark"></p>
+
+    </div>
+    </div>
+
+    <div id="section3">
+        <p id="a">
+            Go to the next part to know what was going on with the return statement.
+        </p>
+        <button class="btn" type="button" onclick="nextPage()"><span>Next</span></button>
+    </div>
 
 </div>
 </body>
-
+<script src="../js/Level2-func/page4-func.js"></script>
 </html>
