@@ -7,7 +7,7 @@ New changes/replacements
 | **Previous**  |  **Bootstrap**   |
 |---|---|
 |```class="footnote"```   | ```class="text-muted"```  |
-|   |   |
+| ```class="note"```  | ```class="text-info"```  |
 |   |   |
 
 
@@ -37,9 +37,9 @@ Example : ```<div id="page2"></div>```
 - Any word that is a programming concept name or a Python keyword should be wrapped in an italic tag with class 'code'
 ```<i class="code">def</i>```
 
-- Any tip/info/notes come under <del>``` <p class="note">```
+- Any tip/info/notes come under <del>``` <p class="note">```</del> ```<p class="text-info">```
 
-- Any extra information that is not very important, like "first one is done for you" ```<p class="footnote">```
+- Any extra information that is not very important, like "first one is done for you" <del>```<p class="footnote">```
 
 - div wrap for code run ```<div id="working-code">```
 
