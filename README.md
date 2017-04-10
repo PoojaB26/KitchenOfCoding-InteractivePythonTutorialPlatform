@@ -39,7 +39,7 @@ Example : ```<div id="page2"></div>```
 
 - Any tip/info/notes come under <del>``` <p class="note">```</del> ```<p class="text-info">```
 
-- Any extra information that is not very important, like "first one is done for you" <del>```<p class="footnote">```
+- Any extra information that is not very important, like "first one is done for you" <del>```<p class="footnote">```</del> ```<p class="text-muted">```
 
 - div wrap for code run ```<div id="working-code">```
 
