@@ -12,6 +12,10 @@ function nextPage() {
         $("#page4").load("page5.html");
     });   }
 
+function refreshConsole(){
+    var outputText = document.getElementById("code-output");
+    outputText.innerHTML = " ";
+}
 // output functions are configurable.  This one just appends some text
 // to a pre element.
 function outf(text) {
