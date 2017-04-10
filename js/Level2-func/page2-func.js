@@ -1,6 +1,7 @@
 /**
  * Created by meow on 4/5/2017.
  */
+var radioOutput = document.getElementById('radio-output');
 
 function showRemark() {
     radioOutput.style.visibility = 'visible';
@@ -8,7 +9,7 @@ function showRemark() {
 }
 function checkFunctionName(){
 
-    var radios = document.getElementsByName('chooseFunc');
+    var radios = document.getElementsByName('choose-func');
 
     for (var i = 0, length = radios.length; i < length; i++) {
         if (radios[i].checked) {
@@ -18,7 +19,7 @@ function checkFunctionName(){
                     break;
                 case 1: showRemark();
                     radioOutput.innerHTML="Yes, you got it";
-                    goNext();
+                    showDivGoNext();
                     break;
                 case 2: showRemark();
                     radioOutput.innerHTML="Try again, maybe. We never used it before.";
@@ -31,11 +32,11 @@ function checkFunctionName(){
 }
 
 
-function goNext() {
-    document.getElementById('GoNext').style.visibility = "visible";
+function showDivGoNext() {
+    document.getElementById('go-next').style.visibility = "visible";
 }
 
 function nextPage() {
     $(function() {
-        $("#page2").load("page1.html");
+        $("#page2").load("page3.html");
     });   }

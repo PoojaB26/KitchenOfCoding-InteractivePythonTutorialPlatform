@@ -7,7 +7,7 @@
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <link rel="stylesheet" href="../css/code-format.css">
     <link rel="stylesheet" href="../css/editor-console.css">
-    <link rel="stylesheet" href="../css/Level2-style/page2-style.css">
+    <link rel="stylesheet" href="../css/elements-style.css">
 
 
 </head>
@@ -28,15 +28,15 @@
         <p><b>Look at the recipe carefully, is there any function that was defined in the last level and can be reused again today?</b></p>
         <br>
         <h4>Pick the function</h4>
-        <form action="#" id="form" name="proceedForm" >
-            <input type="radio" name="chooseFunc" value="chop">chop_vegetables()
-            <input type="radio" name="chooseFunc" value="boil">boil()
-            <input type="radio" name="chooseFunc" value="bake">bake()
+        <form action="#" id="form" name="proceed-form" >
+            <input title="choose-func" type="radio" name="choose-func" value="chop">chop_vegetables()
+            <input title="choose-func" type="radio" name="choose-func" value="boil">boil()
+            <input title="choose-func" type="radio" name="choose-func" value="bake">bake()
         </form>
-        <button class="btn" type="button" onclick="return checkFunctionName();"><span>Check</span></button>
-        <p class="remark" id="radioOutput"></p>
+        <button class="btn-result" type="button" onclick="return checkFunctionName();"><span>Check</span></button>
+        <p class="remark" id="radio-output"></p>
 
-        <div id="GoNext">
+        <div id="go-next">
             <p>That’s why we love functions. We can reuse the same function any number of times, any where we like.</p>
             <button class="btn" type="button" onclick="nextPage()"><span>Next</span></button>
         </div>
