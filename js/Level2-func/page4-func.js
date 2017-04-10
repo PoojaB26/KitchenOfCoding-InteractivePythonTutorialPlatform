@@ -1,15 +1,11 @@
 /**
- * Created by pblead26 on 04-Mar-17.
+ * Created by meow on 4/10/2017.
  */
-
-function showSection2() {
-    document.getElementById('section3').style.visibility = "visible";
-}
 
 
 function nextPage() {
     $(function() {
-        $("#page5").load("page5.html");
+        $("#page4").load("page5.html");
     });   }
 
 // output functions are configurable.  This one just appends some text
@@ -19,7 +15,7 @@ function outf(text) {
     var resultText = document.getElementById("code-remark");
 
     outputText.innerHTML = outputText.innerHTML + text;
-    showSection2();
+    showSection3();
 
 }
 
@@ -76,7 +72,7 @@ function checkAnswer(){
                     break;
                 case 3: showRemark();
                     constOutput.innerHTML="A function is used because of all the above reasons.";
-                    next();
+                    showSection2();
                     break;
 
             }
@@ -89,10 +85,9 @@ function showRemark(){
     constOutput.style.visibility = 'visible';
 }
 
-function next(){
+function showSection2(){
     section2.style.visibility = 'visible';
 }
-
-/**
- * Created by meow on 4/10/2017.
- */
+function showSection3() {
+    document.getElementById('section3').style.visibility = "visible";
+}
