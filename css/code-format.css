@@ -7,7 +7,7 @@ p
     display: inline-block;
 }
 
-#section2, #radio-output, #go-next{
+#section2, #radio-output, #go-next, #section3{
     visibility: hidden;
 }
 
