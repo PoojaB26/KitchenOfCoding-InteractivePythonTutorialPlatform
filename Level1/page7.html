@@ -10,6 +10,10 @@
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <link rel="stylesheet" href="../css/editor-console.css">
     <link rel="stylesheet" href="../css/elements-style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 
 </head>
@@ -111,10 +115,27 @@ def boil_water():
             I hope you enjoyed today’s lesson.
 <br>
         </p>
-        <button class="btn" type="button" onclick="nextPage()"><span>Next</span></button>
+        <button class="btn" type="button"><span>Next</span></button>
 
     </div>
 
+    <div id="myModal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" hidden>
+
+                </div>
+                <div class="modal-body">
+                    <p><h1>Congratulations!</h1></p>
+                    <p class="text-success">You have successfully passed Level 1</p>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"  onclick="nextPage()">PROCEED</button>
+
+                </div>
+                <div class="modal-footer" hidden>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
 <script type="text/javascript" src="../js/Level1-func/page7-func.js"></script>
