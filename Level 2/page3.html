@@ -7,7 +7,7 @@
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <link rel="stylesheet" href="../css/code-format.css">
     <link rel="stylesheet" href="../css/editor-console.css">
-    <link rel="stylesheet" href="../css/Level2-style/page3-style.css">
+    <link rel="stylesheet" href="../css/elements-style.css">
 
 
 </head>
@@ -29,9 +29,9 @@
     </div>
 
     <div class="container">
-        <div id="codeditor" >
+        <div id="code-editor" >
             <form>
-<textarea id="test_code">
+<textarea id="test-code">
 
 def boil_water():
         #Temperature is in Celsius
@@ -42,12 +42,12 @@ boil_water()
 </textarea><br/>
 
             </form>
-            <button class="btnResult" type="button" onclick="runit()"><span>Run</span></button>
+            <button class="btn-result" type="button" onclick="runit()"><span>Run</span></button>
 
         </div>
 
 
-        <div class="consoleShow">
+        <div class="console-show">
             <div id='bar'>
                 <div id='controls'>
                     <div class='c'><p class='control'>&times;</p></div>
@@ -56,7 +56,7 @@ boil_water()
                 <p id='title'>Python Console</p>
             </div>
             <div id='screen'>
-                <p id="output">
+                <p id="code-output">
 
                     Output
                 </p>
@@ -66,13 +66,13 @@ boil_water()
         </div>
     </div>
 
-    <div id="workingCode">
+    <div id="working-code">
 
-        <p id="result"></p>
+        <p id="code-remark"></p>
 
     </div>
-    <div id="section2">
-        <p id="a">
+    <div id="go-next">
+        <p>
             Press Next to know how a function is defined.
         </p>
         <button class="btn" type="button" onclick="nextPage()"><span>Next</span></button>
