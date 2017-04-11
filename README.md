@@ -1,6 +1,16 @@
 # Eat-Drink-Code
 Mozilla Project #TeachTheWeb
 
+#### Update 10 April 2017 : Bootstrap 3 added
+New changes/replacements 
+
+| **Previous**  |  **Bootstrap**   |
+|---|---|
+|```class="footnote"```   | ```class="text-muted"```  |
+| ```class="note"```  | ```class="text-info"```  |
+|   |   |
+
+
 ## Naming convention
 ``` Note : All IDs and classnames must use a hyphen to separate two words. Underscore and camel cases is not recommended by Google's naming convention```
 
@@ -27,9 +37,9 @@ Example : ```<div id="page2"></div>```
 - Any word that is a programming concept name or a Python keyword should be wrapped in an italic tag with class 'code'
 ```<i class="code">def</i>```
 
-- Any tip/info/notes come under ``` <p class="note">```
+- Any tip/info/notes come under <del>``` <p class="note">```</del> ```<p class="text-info">```
 
-- Any extra information that is not very important, like "first one is done for you" ```<p class="footnote">```
+- Any extra information that is not very important, like "first one is done for you" <del>```<p class="footnote">```</del> ```<p class="text-muted">```
 
 - div wrap for code run ```<div id="working-code">```
 
