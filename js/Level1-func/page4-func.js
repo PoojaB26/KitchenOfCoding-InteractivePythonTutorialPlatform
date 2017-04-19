@@ -7,7 +7,7 @@ function showSection2() {
 }
 
 function nextPage() {
-    location.href = "page5.html";
+    location.href = "page4b.html";
 }
 
 // output functions are configurable.  This one just appends some text

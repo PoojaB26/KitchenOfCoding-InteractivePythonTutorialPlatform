@@ -16,66 +16,133 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+    <!--Font CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Cabin|Open+Sans" rel="stylesheet">
+
     <!--Project CSS files-->
-    <link rel="stylesheet" href="../css/code-format.css">
     <link rel="stylesheet" href="../css/editor-console.css">
-    <link rel="stylesheet" href="../css/elements-style.css">
-    <link rel="stylesheet" type="text/css" href="../css/code-style.css">
+    <link rel="stylesheet" href="../css/code-snippet.css">
+    <link rel="stylesheet" href="../css/modal-style.css">
+    <link rel="stylesheet" href="../css/button-style.css">
+    <link rel="stylesheet" href="../css/element-style.css">
+    <link rel="stylesheet" href="../css/code-format.css">
 
 
 </head>
 
 <body>
-<div id="page4b">
+<div class="wrap">
+    <div class="content container-fluid">
+        <div class="row">
+            <p class="text-instructions heading">Heading</p>
+            <div>
+                <p class="text-instructions">
+                    Lets <i class="code">print</i> the quantity of water. Press Next.
+                </p>
 
-    <div id="section1">
-        <p>
-            Lets <i class="code">print</i> the quantity of water. Press Next.
-        </p>
-
-    </div>
-        <div class="container">
-            <div id="code-editor" >
-                <form>
-<textarea id="test-code">
-
+            </div>
+        </div>
+        <div class="row">
+            <div class="code-editor-wrap well row">
+                <div class="code-editor" >
+                    <form>
+<textarea class="editor" id="test-code">
 #Quantity is in ml
 Water = 5
 print(Water)
 </textarea><br/>
 
-                </form>
-                <button class="btn-result" type="button" onclick="runit()"><span>Run</span></button>
+                    </form>
+                </div>
+                <br><br>
+                <div class=" rows ">
+                    <div class="col-xs-2">
+                        <button class="btn btn-trans" id="btn-hint" type="button" data-toggle="modal" data-target="#hintModal">Hint</button>
 
-            </div>
-
-
-            <div class="console-show">
-                <div id='bar'>
-                    <div id='controls'>
-                        <div class='c'><p class='control'>&times;</p></div>
-                        <div class='c'><p class='control'>&minus;</p></div>
                     </div>
-                    <p id='title'>Python Console</p>
+
+                    <div class="col-xs-7">
+
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-info" type="button" onclick="runit()" ><span>Run</span></button>
+                    </div>
                 </div>
-                <div id='screen'>
-                    <p id="code-output">
+            </div>
 
-                        Output
-                    </p>
+            <div class="code-editor-wrap well row">
+                <div class="code-editor" >
+                    <form>
+                        <p class="output-screen"  id="code-output">
+
+                            Output
+                        </p>
+
+                    </form>
                 </div>
+                <br><br>
+                <div class=" rows ">
+                    <div class="col-xs-9"></div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-danger" type="button" onclick="clearConsole()"><span>Clear</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="go-next">
+
+                <p class="text-instructions" id="code-remark"></p>
+
+                <div class="btn-wrapper">
+                    <button  class="btn btn-primary btn-center" type="button" data-toggle="modal" data-target="#points-modal" ><span>Continue</span></button>
+                </div>
+            </div>
+
+        </div>
 
 
+
+        <!-- Congrats Modal -->
+        <div class="modal fade modal-wrap" id="points-modal"  data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="text-congrats" aria-hidden="true" >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content container-fluid">
+
+                    <div class="modal-body">
+
+                        <div class=" rows ">
+                            <div class="col">
+                                <img id="img-checked"  src="../img/checked.png" alt="Congratulations">
+                            </div>
+                        </div>
+
+                        <div class=" rows ">
+                            <div class="col heading text-center modal-text" id="modal-congrats-text">
+                                Congratulations
+                            </div>
+                        </div>
+
+                        <div class="rows">
+                            <div class="col text-center modal-text" id="modal-congrats-subtext" >
+                                You did it!
+                            </div>
+                        </div>
+
+                        <div class="rows ">
+                            <div class="col text-center modal-text">
+                                <button  type="button" id="btn-nextpage" class="btn" onclick="nextPage()">Continue</button>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
         </div>
 
-        <div id="go-next">
-
-            <p id="code-remark"></p>
-            <button class="btn" type="button" onclick="nextPage()"><span>Next</span></button>
-
-        </div>
-
+    </div>
 </div>
 <script type="text/javascript" src="../js/Level1-func/page4b-func.js"></script>
 </body>
