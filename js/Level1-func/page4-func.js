@@ -7,9 +7,8 @@ function showSection2() {
 }
 
 function nextPage() {
-    $(function() {
-        $("#page4").load("page4b.html");
-    });   }
+    location.href = "page5.html";
+}
 
 // output functions are configurable.  This one just appends some text
 // to a pre element.
