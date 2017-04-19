@@ -2,21 +2,13 @@
  * Created by pblead26 on 04-Mar-17.
  */
 
-$(document).ready(function(){
-    $(".btn").click(function(){
-        $("#myModal").modal({
-
-        });
-    });
-});
 
 function showDivSection2() {
     document.getElementById('section2').style.visibility = "visible";
 }
 function nextPage() {
-    $(function() {
-        $("#page7").load("../Level2/page1.html");
-    });   }
+    location.href="../Level2/page1.html";
+    }
 
 // output functions are configurable.  This one just appends some text
 // to a pre element.

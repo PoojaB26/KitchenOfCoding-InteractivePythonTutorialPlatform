@@ -36,45 +36,40 @@
     <div class="content container-fluid">
         <div class="row">
             <p class="text-instructions heading">Heading</p>
-            <div>
-                <p class="text-instructions">
-                    Now this function is for boiling water, but we may use the same action for different quantity of water. Would it be efficient to rewrite this same function again and again?
-                    No, right?<br>
-                    So how about we reuse this same function again?<br><br>
-
-                    Let's do a task.<br>
-                    We have three quantities of water that you have to boil. </p>
-
-                <p class="text-muted">First one is done for you.</p><br>
+            <div>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+                Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
+                Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</div>
+            <div class="btn btn-wrapper ">
+                <button id="btn-test">Hi</button>
             </div>
-
+            <div class="radio" >
+                <form class="text-instructions" id="form" name="proceed-form" method="post">
+                    <label class="radio">
+                        <input title="constant" type="radio" name="constant" value="water"  > Water <br>
+                    </label>
+                    <label class="radio">
+                        <input title="constant" type="radio" name="constant" value="salt" > Salt <br>
+                    </label>
+                    <label class="radio">
+                        <input title="constant" type="radio" name="constant" value="stove" > Stovesjffhsjhfjshjfhasjkhfkjashkjhdakjsh
+                    </label>
+                </form>
+            </div>
         </div>
         <div class="row">
             <div class="code-editor-wrap well row">
                 <div class="code-editor" >
                     <form>
-<textarea class="editor" id="user-code">
-#Quantity is in cups
-Water = 1
-boil_water()
-
-#Quantity is in ml
-Water = 3
-#your boiling function here
-
-#Quantity is in litres
-Water = 1.5
-#your boiling function here
+<textarea class="editor" id="test-code">
+element = 5
+print(element)
 </textarea><br/>
 
                     </form>
                 </div>
-                <textarea id="predefined" hidden>
-
-def boil_water():
-                print("Boiling water is successful")
-
-</textarea>
                 <br><br>
                 <div class=" rows ">
                     <div class="col-xs-2">
@@ -114,6 +109,10 @@ def boil_water():
                 </div>
             </div>
 
+            <div>
+                <p class="text-instructions">Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+            </div>
+
             <div class="code-editor-wrap well row">
                 <div class="code-editor" >
                     <form>
@@ -134,41 +133,11 @@ def boil_water():
             </div>
         </div>
 
-        <div id="section2">
 
-            <p class="text-instructions">
-                Now imagine you are a chef helper in a huge restaurant. And today, your primary job is to boil.  That’s a pretty tiring task, right?<br>
+        <p class="text-instructions">Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
 
-                The chef will not be telling you the instructions to boil, every time you are asked to boil something. You are expected to remember the method once told.<br>
-
-                The chef will give you the item and your task is to just put it on stove and boil for 10 minutes at 100 degree celsius and give the boiled item to the next person.<br><br>
-
-
-                Lets start rewriting your boiling task as a function
-            </p>
-            <div class="show-code"><code contentEditable="false">
-                <p>def boil_water():</p>
-                <p>    liquid = input()</p>
-                <p>    Temp = 100</p>
-                <p>    print (“boiling completed”)</p>
-                <p>    print (liquid)
-                </p></code>
-            </div><br>
-
-            <p class="text-instructions">
-                <i class="code">input()</i> is a pre-defined function that takes in values from the user using your program.<br>
-                So if you were to use water as a variable, the user will decide how much water you are to use.<br><br>
-
-                For example, if you are in a restaurant that only makes omelettes. And you let the customer decide how many eggs they want in a omelette. Then you are taking input from the customer.
-                <br><br>
-                So what’s the result of the program we wrote today.<br>
-                We took a <i class="code">variable</i> cold water as <i class="code">input</i>, we put a function <i class="code">boil_water()</i> and got hot water as an <i class="code">output</i>.<br>
-                I hope you enjoyed today’s lesson.
-                <br>
-            </p>
-            <div class="btn-wrapper">
-                <button  class="btn btn-primary btn-center" type="button" data-toggle="modal" data-target="#points-modal" ><span>Continue</span></button>
-            </div>
+        <div class="btn-wrapper">
+            <button  class="btn btn-primary btn-center" type="button" data-toggle="modal" data-target="#points-modal" ><span>Continue</span></button>
         </div>
 
         <!-- Congrats Modal -->
@@ -192,7 +161,7 @@ def boil_water():
 
                         <div class="rows">
                             <div class="col text-center modal-text" id="modal-congrats-subtext" >
-                                You passed Level 1 of Kitchen of Coding!
+                                You did it!
                             </div>
                         </div>
 
@@ -212,6 +181,6 @@ def boil_water():
 
     </div>
 </div>
-<script type="text/javascript" src="../js/Level1-func/page7-func.js"></script>
+<script type="text/javascript" src="../js/runPython.js"></script>
 </body>
 </html>

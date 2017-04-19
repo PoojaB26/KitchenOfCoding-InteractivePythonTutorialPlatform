@@ -16,57 +16,69 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+    <!--Font CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Cabin|Open+Sans" rel="stylesheet">
+
     <!--Project CSS files-->
-    <link rel="stylesheet" href="../css/code-format.css">
     <link rel="stylesheet" href="../css/editor-console.css">
-    <link rel="stylesheet" href="../css/elements-style.css">
-    <link rel="stylesheet" type="text/css" href="../css/code-style.css">
+    <link rel="stylesheet" href="../css/code-snippet.css">
+    <link rel="stylesheet" href="../css/modal-style.css">
+    <link rel="stylesheet" href="../css/button-style.css">
+    <link rel="stylesheet" href="../css/element-style.css">
+    <link rel="stylesheet" href="../css/code-format.css">
 
 
 </head>
 
 <body>
-<div id="page6">
-    <p>Now finally lets boil water. Here we are doing a task.<br>
-        In coding language, a <i class="code">function</i> does a task.<br><br>
+<div class="wrap">
+    <div class="content container-fluid">
+        <div class="row">
+            <p class="text-instructions heading">Heading</p>
+            <div>
+                <p class="text-instructions">Now finally lets boil water. Here we are doing a task.<br>
+                In coding language, a <i class="code">function</i> does a task.<br><br>
 
-        Below is a <i class="code">function</i> written for you.</p><br>
+                Below is a <i class="code">function</i> written for you.</p>
+                <div class="show-code"><code contentEditable="false">
+                    <p>def boil_water():</p>
+                    <p>   #Temperature is in Celsius</p>
+                    <p>   Temp=100</p>
+                    <p>   print("Boiling water successful")</p>
+                </code>
+                </div>
+                <p class="text-instructions">Anything after <i class="code">def</i> and before <i class="code">():</i> is a <i class="code">function</i>.
+                    So <i class="code">boil_water</i> is the name of the function.<br>
+                    What task will this function carry?<br><br>
+                    You’re right. It will boil water.<br><br>
 
-    <div class="show-code"><code contentEditable="false">
-        <p>def boil_water():</p>
-        <p>   #Temperature is in Celsius</p>
-        <p>   Temp=100</p>
-        <p>   print("Boiling water successful")</p>
-    </code>
-    </div>
-    <p>Anything after <i class="code">def</i> and before <i class="code">():</i> is a <i class="code">function</i>.
-        So <i class="code">boil_water</i> is the name of the function.<br>
-        What task will this function carry?<br><br>
-        You’re right. It will boil water.<br><br>
+                    In the above code snippet, we have only defined what the function or task does. Nobody is yet doing it.<br>
+                </p>
+                <p class="text-instructions">
+                    To actually do a task,
+                    We <i class="code">call</i> the function. <br> Like this.
 
-        In the above code snippet, we have only defined what the function or task does. Nobody is yet doing it.<br>
-    </p>
-    <p>
-        To actually do a task,
-        We <i class="code">call</i> the function. <br> Like this.
+                </p>
 
-    </p>
+                <div class="show-code"><code contentEditable="false">
+                    <p>boil_water()</p>
+                </code>
+                </div>
 
-    <div class="show-code"><code contentEditable="false">
-        <p>boil_water()</p>
-    </code>
-    </div>
+                <p class="text-instructions">
+                    Why dont you try calling functions for the next task or function?
 
-    <p>
-        Why dont you try calling functions for the next task or function?
+                </p>
+            </div>
 
-    </p>
 
-    <div class="container">
-        <div id="code-editor" >
-            <form>
-<textarea id="test-code">
-
+        </div>
+        <div class="row">
+            <div class="code-editor-wrap well row">
+                <div class="code-editor" >
+                    <form>
+<textarea class="editor" id="test-code">
 #Quantity is in ml
 Milk = 5
 def boil_milk():
@@ -74,41 +86,115 @@ def boil_milk():
     print("Milk is boiled")
 
 #Call boil_milk() here
-
 </textarea><br/>
 
-            </form>
-            <button class="btn-result" type="button" onclick="runit()"><span>Run</span></button>
-            <p id="code-remark" ></p>
-
-        </div>
-
-
-        <div class="console-show">
-            <div id='bar'>
-                <div id='controls'>
-                    <div class='c'><p class='control'>&times;</p></div>
-                    <div class='c'><p class='control'>&minus;</p></div>
+                    </form>
                 </div>
-                <p id='title'>Python Console</p>
+                <br><br>
+                <div class=" rows ">
+                    <div class="col-xs-2">
+                        <button hidden class="btn btn-trans" id="btn-hint" type="button" data-toggle="modal" data-target="#hintModal">Hint</button>
+
+                    </div>
+
+                    <div class="col-xs-7">
+
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-info" type="button" onclick="runit()" ><span>Run</span></button>
+                    </div>
+                </div>
             </div>
-            <div id='screen'>
-                <p id="code-output">
 
-                    Output
-                </p>
+            <!-- Hint Modal -->
+            <div class="modal fade modal-wrap" id="hintModal" tabindex="-1" role="dialog" aria-labelledby="text-question" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="text-question">Title name</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
+                            </p>
+                            <div class="show-code "><code contentEditable="false">
+                                <p>function add(a, b) {</p>
+                                <p>  //interesting fun</p>
+                                <p>  return a + b;</p>
+                                <p>}</p></code>
+                            </div><br>
+                        </div>
+
+                    </div>
+                </div>
             </div>
 
+            <div class="code-editor-wrap well row">
+                <div class="code-editor" >
+                    <form>
+                        <p class="output-screen"  id="code-output">
 
+                            Output
+                        </p>
+
+                    </form>
+                </div>
+                <br><br>
+                <div class=" rows ">
+                    <div class="col-xs-9"></div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-danger" type="button" onclick="clearConsole()"><span>Clear</span></button>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <div id="go-next">
-        <p>
-            Congratulations.
-            You know how to call a function.
-        </p>
-        <button class="btn" type="button" onclick="nextPage()"><span>Next</span></button>
+
+        <p id="code-remark" class="text-instructions"> </p>
+
+        <div class="btn-wrapper">
+            <button  class="btn btn-primary btn-center" type="button" data-toggle="modal" data-target="#points-modal" ><span>Continue</span></button>
+        </div>
+
+        <!-- Congrats Modal -->
+        <div class="modal fade modal-wrap" id="points-modal"  data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="text-congrats" aria-hidden="true" >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content container-fluid">
+
+                    <div class="modal-body">
+
+                        <div class=" rows ">
+                            <div class="col">
+                                <img id="img-checked"  src="../img/checked.png" alt="Congratulations">
+                            </div>
+                        </div>
+
+                        <div class=" rows ">
+                            <div class="col heading text-center modal-text" id="modal-congrats-text">
+                                Congratulations
+                            </div>
+                        </div>
+
+                        <div class="rows">
+                            <div class="col text-center modal-text" id="modal-congrats-subtext" >
+                                You know how to call a function!
+                            </div>
+                        </div>
+
+                        <div class="rows ">
+                            <div class="col text-center modal-text">
+                                <button  type="button" id="btn-nextpage" class="btn" onclick="nextPage()">Continue</button>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
 <script type="text/javascript" src="../js/Level1-func/page6-func.js"></script>

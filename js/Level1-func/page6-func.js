@@ -7,9 +7,8 @@ function showDivGoNext() {
 }
 
 function nextPage() {
-    $(function() {
-        $("#page6").load("page7.html");
-    });   }
+        location.href="page7.html"
+  }
 
 // output functions are configurable.  This one just appends some text
 // to a pre element.
