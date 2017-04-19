@@ -1,0 +1,27 @@
+.btn-trans {
+    background:none;
+    box-shadow:none;
+}
+
+#btn-hint{
+    color: #4271ff;
+    font-weight: bold;
+    width:100px;
+}
+
+#btn-test{
+    width: 100px;
+}
+
+
+.btn-wrapper {
+    height:50px;
+}
+.btn-center{
+    height:40px;
+    position:relative;
+    margin: -20px -50px;
+    width:100px;
+    top:50%;
+    left:50%;
+}

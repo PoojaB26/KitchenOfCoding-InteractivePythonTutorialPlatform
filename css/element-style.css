@@ -1,0 +1,61 @@
+/*style for the instruction text*/
+body {
+    font-family: 'Open Sans', sans-serif;
+
+}
+.radio{
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+.text-instructions{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+
+
+.heading{
+    color: #1b79ff;
+    font-size: 25px;
+}
+
+#img-checked{
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+}
+
+#img-div{
+    height: 60px;
+}
+
+
+
+#modal-congrats-text{
+    font-family: 'Anton', sans-serif;
+    color: #8acd5d;
+    font-size: 35px;
+}
+
+#modal-congrats-subtext{
+    font-family: 'Cabin', sans-serif;
+    color: #000;
+    font-size: 22px;
+}
+
+.btn-primary{
+    background-color: #4271ff;
+}
+
+
+#btn-nextpage{
+    width: 100px;
+    margin: 20px 0px 0px 0px;
+    background-color: #1e625a;
+    color: #fff;
+}
