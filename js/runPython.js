@@ -1,5 +1,5 @@
 /**
- * Created by pblead26 on 04-Mar-17.
+ * Created by pblead26 on 18-Apr-17.
  */
 
 
@@ -8,21 +8,23 @@ function showDivGoNext() {
 }
 
 function nextPage() {
-    $(function() {
-        $("#page4").load("page5.html");
-    });   }
+    location.href = "Level1/page2.html";
+}
 
-function refreshConsole(){
+function clearConsole(){
     var outputText = document.getElementById("code-output");
     outputText.innerHTML = " ";
 }
+
+
 // output functions are configurable.  This one just appends some text
 // to a pre element.
 function outf(text) {
     var outputText = document.getElementById("code-output");
-    var resultText = document.getElementById("code-remark");
+    //  var resultText = document.getElementById("code-remark");
+
     outputText.innerHTML = outputText.innerHTML + text;
-    showDivGoNext();
+    // showDivGoNext();
 
 }
 
@@ -54,4 +56,3 @@ function runit() {
             console.log(err.toString());
         });
 }
-

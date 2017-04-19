@@ -1,9 +1,7 @@
-<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <title>Level 1</title>
-
     <!--JQuery-->
     <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
@@ -18,34 +16,54 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+    <!--Font CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Cabin|Open+Sans" rel="stylesheet">
+
     <!--Project CSS files-->
-    <link rel="stylesheet" href="../css/code-format.css">
     <link rel="stylesheet" href="../css/editor-console.css">
-    <link rel="stylesheet" href="../css/elements-style.css">
-    <link rel="stylesheet" type="text/css" href="../css/code-style.css">
+    <link rel="stylesheet" href="../css/code-snippet.css">
+    <link rel="stylesheet" href="../css/modal-style.css">
+    <link rel="stylesheet" href="../css/button-style.css">
+    <link rel="stylesheet" href="../css/element-style.css">
+
 
 </head>
+
 <body>
-    <div id="page1">
-        <div id="section1">
+<div class="wrap">
+    <div class="content container-fluid">
+        <div class="row">
+            <p class="text-instructions heading">Heading</p>
+            <div>
+                <p class="text-instructions">Welcome to the first lesson of kitchen of coding.<br><br>
 
-        <p>Welcome to the first lesson of kitchen of coding.<br><br>
+                In your house, you are the cook who buys, prepares, and mixes the ingredients into a beautiful delicious dish that is served on the dinner table for your family to enjoy.<br>
+                In a similar manner, in the coding world, you cook your own programs and the world enjoys it.<br><br>
 
-        In your house, you are the cook who buys, prepares, and mixes the ingredients into a beautiful delicious dish that is served on the dinner table for your family to enjoy.<br>
-        In a similar manner, in the coding world, you cook your own programs and the world enjoys it.<br><br>
+                Lets move onto our very first lesson<br><br>
+                Lets boil some water and teach you the basics of programming.</p></div>
 
-      Lets move onto our very first lesson<br><br>
-          Lets boil some water and teach you the basics of programming.</p>
+            <div class="radio" >
+                <form class="text-instructions" id="form" name="proceed-form" method="post">
+                    <label class="radio">
+                        <input type="radio" name="proceed" value="yes">Proceed
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="proceed" value="no">No, I don't want to.
+                    </label>
+                </form>
 
-        <form id="form" name="proceed-form" method="post">
-            <input title="proceed" type="radio" name="proceed" value="yes">Proceed<br><br>
-            <input title="proceed" type="radio" name="proceed" value="no">No, I don't want to.<hr>
-        </form>
-        <button class="btn" type="button" onclick="return submitForm();"><span>NEXT</span></button>
+            </div>
+            <div class="btn btn-wrapper ">
+                <button  id="btn-test" class="btn btn-info " type="button" onclick="return submitForm();" ><span>Continue</span></button>
 
+            </div>
         </div>
 
+
     </div>
-    <script src="../js/Level1-func/page1-func.js"></script>
+</div>
+<script src="../js/Level1-func/page1-func.js"></script>
 </body>
 </html>

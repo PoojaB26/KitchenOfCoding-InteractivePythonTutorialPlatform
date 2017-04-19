@@ -37,6 +37,5 @@ function next(){
 }
 
 function nextPage() {
-    $(function() {
-        $("#page2").load("page3.html");
-    });   }
+    location.href = "page3.html";
+}

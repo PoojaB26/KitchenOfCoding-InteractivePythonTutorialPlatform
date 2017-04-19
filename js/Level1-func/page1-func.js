@@ -1,3 +1,4 @@
+
 function findSelection(field) {
     var test = document.getElementsByName(field);
     var sizes = test.length;
@@ -16,12 +17,10 @@ function submitForm() {
 
     var selection= findSelection("proceed");
     if(selection=="yes"){
-        $(function() {
-            $("#page1").load("page2.html");
-        });    }
+        location.href = "page2.html";
+    }
     else{
-        $(function() {
-            $("#page1").load("decline.html");
-        });    }
+        location.href = "decline.html";
+     }
 
 }
