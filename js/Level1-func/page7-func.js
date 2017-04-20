@@ -18,7 +18,18 @@ function outf(text) {
 
     var out = outputText.innerHTML + text;
     outputText.innerHTML = out;
-    showDivSection2();
+
+    var pattern = /Boiling water is successfull Boiling water is successfull Boiling water is successfull/;
+    var output = pattern.test(out);
+
+    if(output.toString()==="true"){
+        resultText.innerHTML = "That is right!";
+        showDivSection2();
+    }
+    else
+    {
+        resultText.innerHTML = "Did you call all the 3 functions?";
+    }
 
 
 }
