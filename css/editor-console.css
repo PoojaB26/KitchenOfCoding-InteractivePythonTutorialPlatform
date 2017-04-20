@@ -12,7 +12,6 @@ body{
 }
 textarea {
     background: transparent;
-    height: 190px;
     resize: none;
 }
 
@@ -33,6 +32,7 @@ textarea {
 }
 .code-editor{
     margin-right: 2%;
+
 }
 
 .content{
@@ -50,7 +50,8 @@ textarea {
     background: midnightblue;
     color:white;
     padding:5px;
-    min-height: 130px;
-    overflow: hidden;
-    resize: inherit;
+    height: 200px;
+    max-height: 430px;
+    overflow-y: auto;
+    resize: none;
 }
