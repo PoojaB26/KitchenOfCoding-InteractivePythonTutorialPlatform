@@ -18,8 +18,8 @@ function outf(text) {
 
     var out = outputText.innerHTML + text;
     outputText.innerHTML = out;
-
-    var pattern = /Boiling water is successfull Boiling water is successfull Boiling water is successfull/;
+    console.log(out);
+    var pattern = /Boiling water is successful\nBoiling water is successful\nBoiling water is successful\n/;
     var output = pattern.test(out);
 
     if(output.toString()==="true"){
