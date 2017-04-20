@@ -95,23 +95,23 @@ salt =
 </textarea><br/>
 
                     </form>
+                    <div class="rows">
+                        <div class="col-xs-2">
+                            <button hidden class="btn-well btn btn-trans" id="btn-hint" type="button" data-toggle="modal" data-target="#hintModal">Hint</button>
+
+                        </div>
+
+                        <div class="col-xs-7">
+
+                        </div>
+                        <div class="col-xs-3">
+                            <button class="btn btn-info btn-well" id="btn-run"  type="button" onclick="runit()" ><span>Run</span></button>
+                        </div>
+                    </div>
+
                 </div>
                 <br><br>
-                <div class=" rows ">
-                    <div class="col-xs-2">
-<!--
-                        <button class="btn btn-trans" id="btn-hint" type="button" data-toggle="modal" data-target="#hintModal">Hint</button>
--->
 
-                    </div>
-
-                    <div class="col-xs-7">
-
-                    </div>
-                    <div class="col-xs-3">
-                        <button class="btn btn-info" type="button" onclick="runit()" ><span>Run</span></button>
-                    </div>
-                </div>
             </div>
 
             <!-- Hint Modal -->
@@ -150,14 +150,15 @@ salt =
                         </p>
 
                     </form>
-                </div>
-                <br><br>
-                <div class=" rows ">
-                    <div class="col-xs-9"></div>
-                    <div class="col-xs-3">
-                        <button class="btn btn-danger" type="button" onclick="clearConsole()"><span>Clear</span></button>
+                    <div class=" rows ">
+                        <div class="col-xs-9"></div>
+                        <div class="col-xs-3">
+                            <button class="btn btn-danger btn-well" type="button" onclick="clearConsole()"><span>Clear</span></button>
+                        </div>
                     </div>
                 </div>
+                <br><br>
+
             </div>
         </div>
 

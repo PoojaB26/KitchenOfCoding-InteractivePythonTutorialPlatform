@@ -4,6 +4,17 @@
     font-size: 12px;
     font-family: 'Source Code Pro', serif;
 }
+
+
+.content{
+    box-shadow: 3px 3px 13px #e0e0e0;
+    background-color: white;
+    width:80%;
+    padding: 5%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
 body{
     background-color: #f7f7f7;
     padding:50px 250px 90px 250px;
@@ -35,15 +46,6 @@ textarea {
 
 }
 
-.content{
-    box-shadow: 3px 3px 13px #e0e0e0;
-    background-color: white;
-    width:80%;
-    padding: 5%;
-    display: block;
-    align-items: center;
-    justify-content: center;
-}
 .editor {
     display: inline-block;
     width: 100%;

@@ -7,6 +7,13 @@
     color: #4271ff;
     font-weight: bold;
     width:100px;
+    margin-top: 10px;
+
+}
+
+#btn-run{
+    margin-top: 10px;
+
 }
 
 #btn-test{
@@ -25,3 +32,7 @@
     top:50%;
     left:50%;
 }
+
+.btn-well{
+    font-weight: bold;
+    width:100px;}
