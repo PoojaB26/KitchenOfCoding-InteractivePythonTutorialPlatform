@@ -24,3 +24,9 @@ function submitForm() {
      }
 
 }
+
+
+function clearConsole(){
+    var outputText = document.getElementById("code-output");
+    outputText.innerHTML = " ";
+}

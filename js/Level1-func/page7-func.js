@@ -63,3 +63,8 @@ function runit() {
             console.log(err.toString());
         });
 }
+
+function clearConsole(){
+    var outputText = document.getElementById("code-output");
+    outputText.innerHTML = " ";
+}

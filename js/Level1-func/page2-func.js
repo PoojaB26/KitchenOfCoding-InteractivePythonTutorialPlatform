@@ -39,3 +39,8 @@ function next(){
 function nextPage() {
     location.href = "page3.html";
 }
+
+function clearConsole(){
+    var outputText = document.getElementById("code-output");
+    outputText.innerHTML = " ";
+}
