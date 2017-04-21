@@ -75,3 +75,7 @@ function showSection2(){
 /**
  * Created by meow on 4/12/2017.
  */
+function clearConsole(){
+    var outputText = document.getElementById("code-output");
+    outputText.innerHTML = " ";
+}

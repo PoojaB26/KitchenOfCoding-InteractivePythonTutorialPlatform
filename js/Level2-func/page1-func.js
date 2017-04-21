@@ -74,3 +74,7 @@ function showHint() {
     document.getElementById('hint').style.visibility="visible";
 }
 
+function clearConsole(){
+    var outputText = document.getElementById("code-output");
+    outputText.innerHTML = " ";
+}

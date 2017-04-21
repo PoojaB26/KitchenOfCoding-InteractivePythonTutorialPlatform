@@ -4,3 +4,7 @@
 function nextPage() {
     location.href = "page6.html";
 }
+function clearConsole(){
+    var outputText = document.getElementById("code-output");
+    outputText.innerHTML = " ";
+}
