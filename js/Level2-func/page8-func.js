@@ -65,3 +65,6 @@ function next1() {
 }/**
  * Created by meow on 4/15/2017.
  */
+function nextPage() {
+    location.href="#";
+}

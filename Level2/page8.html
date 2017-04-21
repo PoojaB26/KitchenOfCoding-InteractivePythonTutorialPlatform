@@ -1,4 +1,3 @@
-<!doctype html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -17,76 +16,150 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <!--Project CSS files-->
-    <link rel="stylesheet" href="../css/code-format.css">
-    <link rel="stylesheet" href="../css/editor-console.css">
-    <link rel="stylesheet" href="../css/elements-style.css">
-    <link rel="stylesheet" type="text/css" href="../css/code-style.css">
+    <!--Font CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Cabin|Open+Sans" rel="stylesheet">
 
+    <!--Project CSS files-->
+    <link rel="stylesheet" href="../css/editor-console.css">
+    <link rel="stylesheet" href="../css/code-snippet.css">
+    <link rel="stylesheet" href="../css/modal-style.css">
+    <link rel="stylesheet" href="../css/button-style.css">
+    <link rel="stylesheet" href="../css/element-style.css">
+    <link rel="stylesheet" href="../css/code-format.css">
 
 
 </head>
+
 <body>
-<div id="page8">
-    <div id="section1">
+<div class="wrap">
+    <div class="content container-fluid">
+        <div class="row">
+            <p class="text-instructions heading">Heading</p>
+            <div>
+                <div id="section1">
 
-        <p>
-            So what did we learn exactly?<br><br>
+                <p class="text-instructions">
+                    So what did we learn exactly?<br><br>
 
-            Arithmetic operations.<br><br>
+                    Arithmetic operations.<br><br>
 
-            We can have all kinds of operations on variables. We are adding tea_powder and sugar to boiled_water to make raw_tea. We added something to boiled_water. But the sugar we added to boiled_water must be subtracted from our sugar container, so now our sugar container has 2 teaspoons of sugar less.
-            <br><br>
-            Let’s take this simple problem.<br><br>
+                    We can have all kinds of operations on variables. We are adding tea_powder and sugar to boiled_water to make raw_tea. We added something to boiled_water. But the sugar we added to boiled_water must be subtracted from our sugar container, so now our sugar container has 2 teaspoons of sugar less.
+                    <br><br>
+                    Let’s take this simple problem.<br><br>
 
-            If the sugar container had 10 teaspoons of sugar, and we took 2 teaspoons, then how many teaspoons of sugar is left?<br><br>
+                    If the sugar container had 10 teaspoons of sugar, and we took 2 teaspoons, then how many teaspoons of sugar is left?
+                    <br><br>
+                </div>
 
-        <form id="form">
-            <input title="constant" type="radio" name="constant" value="12"  > 12 <br>
-            <input title="constant" type="radio" name="constant" value="10" > 10 <br>
-            <input title="constant" type="radio" name="constant" value="8" > 8
-        </form>
-        <button class="btn-result" type="button" onclick="checkConstant()"><span>CHECK</span></button>
 
-        <p class="radio-remark" id="radio-output"></p>
-
-        <div id="section2">
-        Now another one:<br><br>
-
-        If you had to make tea for 6 people this evening, what problem would you face?<br><br>
-        <form id="form1">
-            <input title="constant" type="radio" name="constant1" value="wrong"  > Nothing, I have enough sugar <br>
-            <input title="constant" type="radio" name="constant1" value="right" > I have sugar for just 5 people <br>
-        </form>
-        <button class="btn-result" type="button" onclick="checkConstant1()"><span>CHECK</span></button>
-
-        <p class="radio-remark1" id="radio-output1"></p>
+                <div class="radio" >
+                    <form class="text-instructions" id="form" name="proceed-form" method="post">
+                        <label class="radio">
+                            <input title="constant" type="radio" name="constant" value="12"  > 12 <br>
+                        </label>
+                        <label class="radio">
+                            <input title="constant" type="radio" name="constant" value="10" > 10 <br>
+                        </label>
+                        <label class="radio">
+                            <input title="constant" type="radio" name="constant" value="8" > 8
+                        </label>
+                    </form>
+                </div>
+                <div class="btn btn-wrapper ">
+                    <button class="btn-result" type="button" onclick="checkConstant()"><span>CHECK</span></button>
+                </div>
+                <p class="radio-remark text-instructions" id="radio-output"></p>
         </div>
 
+        <div id="section2">
+           <p class="text-instructions">
+               Now another one:<br><br>
+
+            If you had to make tea for 6 people this evening, what problem would you face?<br><br>
+           </p>
+        <div class="radio" >
+            <form class="text-instructions" id="form1" name="proceed-form" method="post">
+                <label class="radio">
+                    <input title="constant" type="radio" name="constant1" value="wrong"  > Nothing, I have enough sugar <br>
+                </label>
+                <label class="radio">
+                    <input title="constant" type="radio" name="constant1" value="right" > I have sugar for just 5 people <br>
+                </label>
+            </form>
+        </div>
+        <div class="btn btn-wrapper ">
+            <button class="btn-result" type="button" onclick="checkConstant1()"><span>CHECK</span></button>
+        </div>
+            <p class="radio-remark1 text-instructions" id="radio-output1"></p>
+    </div>
+
+            <div id="section3">
+                <p class="text-instructions">How did you know? You did a calculation in your head, didn’t you? In the same way, we use the following for calculations in our computer programs.
+                    <br><br>
+
+                    +     Addition<br>
+                    -     Subtraction<br>
+                    /     Divide<br>
+                    *     Multiplication<br><br>
+
+                    I hope you enjoyed this lesson. Next lesson onwards we get more creative with our recipes.<br><br>
+
+                    CONGRATULATIONS! YOU HAVE SUCCESSFULLY PASSED LEVEL 2<br>
+                    YOU LEARNT THE FOLLOWING CONCEPTS IN PYTHON<br>
+                    Function Definitions<br>
+                    Return Statements<br>
+                    Arithmetic Operations<br>
+
+                <div class="btn-wrapper">
+                    <button  class="btn btn-primary btn-center" type="button" data-toggle="modal" data-target="#points-modal" ><span>Continue</span></button>
+                </div>
+            </div>
+    </div>
+
+
+
+    <!-- Congrats Modal -->
+        <div class="modal fade modal-wrap" id="points-modal"  data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="text-congrats" aria-hidden="true" >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content container-fluid">
+
+                    <div class="modal-body">
+
+                        <div class=" rows ">
+                            <div class="col">
+                                <img id="img-checked" src="../img/checked.png" alt="Congratulations">
+                            </div>
+                        </div>
+
+                        <div class=" rows ">
+                            <div class="col heading text-center modal-text" id="modal-congrats-text">
+                                Congratulations
+                            </div>
+                        </div>
+
+                        <div class="rows">
+                            <div class="col text-center modal-text" id="modal-congrats-subtext" >
+                                You passed Level 2 of Kitchen of Coding!
+                            </div>
+                        </div>
+
+                        <div class="rows ">
+                            <div class="col text-center modal-text">
+                                <button  type="button" id="btn-nextpage" class="btn" onclick="nextPage()">Continue</button>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
     </div>
-    <div id="section3">
-        <p>How did you know? You did a calculation in your head, didn’t you? In the same way, we use the following for calculations in our computer programs.
-            <br><br>
-
-            +     Addition<br>
-            -     Subtraction<br>
-            /     Divide<br>
-            *     Multiplication<br><br>
-
-            I hope you enjoyed this lesson. Next lesson onwards we get more creative with our recipes.<br><br>
-
-            CONGRATULATIONS! YOU HAVE SUCCESSFULLY PASSED LEVEL 2<br>
-            YOU LEARNT THE FOLLOWING CONCEPTS IN PYTHON<br>
-            Function Definitions<br>
-            Return Statements<br>
-            Arithmetic Operations<br>
-
-            <button class="btn" type="button"><span>Proceed</span></button>
-    </div>
-
 </div>
-
-</body>
 <script src="../js/Level2-func/page8-func.js"></script>
+</body>
 </html>
