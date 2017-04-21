@@ -14,6 +14,7 @@ function outf(text) {
     var resultText = document.getElementById("code-remark");
 
     outputText.innerHTML = outputText.innerHTML + text;
+    //TODO: CHECK FOR CORRECT CODE HERE
     showSection3();
 
 }
@@ -89,4 +90,8 @@ function showSection2(){
 }
 function showSection3() {
     document.getElementById('section3').style.visibility = "visible";
+}
+function clearConsole(){
+    var outputText = document.getElementById("code-output");
+    outputText.innerHTML = " ";
 }

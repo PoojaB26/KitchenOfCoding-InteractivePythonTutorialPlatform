@@ -65,6 +65,7 @@ function next1() {
 }/**
  * Created by meow on 4/15/2017.
  */
-function nextPage() {
-    location.href="#";
+function clearConsole(){
+    var outputText = document.getElementById("code-output");
+    outputText.innerHTML = " ";
 }

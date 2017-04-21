@@ -65,3 +65,7 @@ function runit() {
 }/**
  * Created by meow on 4/13/2017.
  */
+function clearConsole(){
+    var outputText = document.getElementById("code-output");
+    outputText.innerHTML = " ";
+}

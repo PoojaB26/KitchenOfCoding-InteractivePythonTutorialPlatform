@@ -36,20 +36,20 @@
     <div class="content container-fluid">
         <div class="row">
             <p class="text-instructions heading">Heading</p>
-            <div><p id="section1">
+            <div>
                 <p class="text-instructions"> As a cook yourself, you must be quite well informed about the procedure of making a ginger tea.<br>
                 Let's list the recipe instructions here so that we know we are on the same page.</p>
 
-                <ol type="1">
+                <ol class="container" type="1">
                     <li class="text-instructions">Boil water in a saucepan</li>
                     <li class="text-instructions">Add tea powder and sugar together and add it to water and boil again</li>
                     <li class="text-instructions">Add milk and boil again</li>
                     <li class="text-instructions">Serve</li>
             </ol>
 
-                <p class="text-instructions"><b>Look at the recipe carefully, is there any function that was defined in the last level and can be reused again today?</b></p>
+                <p class="text-instructions text-info" >Look at the recipe carefully, is there any function that was defined in the last level and can be reused again today?</p>
                 <br>
-                <h4>Pick the function</h4>
+                <p class="text-instructions"><b class="text-instructions">Pick the function</b></p>
             </div></div>
 
             <div class="radio" >
@@ -73,6 +73,11 @@
             </div>
             <div id="go-next">
                 <p class="text-instructions">That’s why we love functions. We can reuse the same function any number of times, any where we like.</p>
+
+                <div class="btn-wrapper">
+                    <button  class="btn btn-primary btn-center" type="button" data-toggle="modal" data-target="#points-modal" ><span>Continue</span></button>
+                </div>
+
             </div>
 
         <!-- Hint Modal -->
@@ -100,9 +105,7 @@
 
 
 
-    <div class="btn-wrapper">
-        <button  class="btn btn-primary btn-center" type="button" data-toggle="modal" data-target="#points-modal" ><span>Continue</span></button>
-    </div>
+
 
     <!-- Congrats Modal -->
     <div class="modal fade modal-wrap" id="points-modal"  data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="text-congrats" aria-hidden="true" >
@@ -125,7 +128,7 @@
 
                     <div class="rows">
                         <div class="col text-center modal-text" id="modal-congrats-subtext" >
-                            You did it!
+                            Now you know why functions are awesome!
                         </div>
                     </div>
 
