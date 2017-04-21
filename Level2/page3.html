@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Level 2</title>
+    <title>Level 1</title>
     <!--JQuery-->
     <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
@@ -16,35 +16,47 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+    <!--Font CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Cabin|Open+Sans" rel="stylesheet">
+
     <!--Project CSS files-->
-    <link rel="stylesheet" href="../css/code-format.css">
     <link rel="stylesheet" href="../css/editor-console.css">
-    <link rel="stylesheet" href="../css/elements-style.css">
-    <link rel="stylesheet" type="text/css" href="../css/code-style.css">
+    <link rel="stylesheet" href="../css/code-snippet.css">
+    <link rel="stylesheet" href="../css/modal-style.css">
+    <link rel="stylesheet" href="../css/button-style.css">
+    <link rel="stylesheet" href="../css/element-style.css">
+    <link rel="stylesheet" href="../css/code-format.css">
+
 
 </head>
 
 <body>
-<div id="page4">
-    <div id="section1">
-        <p> You know very well, how to call a function but do you know how to define one?<br>
-            How would you? We never covered that part.<br><br>
+<div class="wrap">
+    <div class="content container-fluid">
+        <div class="row">
+            <p class="text-instructions heading">Heading</p>
+            <div><div id="section1">
+                <p class="text-instructions"> You know very well, how to call a function but do you know how to define one?<br>
+                    How would you? We never covered that part.<br><br>
 
-            As you know, we are learning programming in the language of Python and the syntax will be quite
-            different from other languages. Unlike other languages,Python gives extreme importance to indentation.<br>
-            So much importance, that a block of code without proper indentation will never even run.<br><br>
+                    As you know, we are learning programming in the language of Python and the syntax will be quite
+                    different from other languages. Unlike other languages,Python gives extreme importance to indentation.<br>
+                    So much importance, that a block of code without proper indentation will never even run.<br><br>
 
-            You want to see it for yourself?<br><br>
-            Run the following code as it is and then manually remove all spaces and run. You will see no output.<br><br>
+                    You want to see it for yourself?<br><br>
+                    Run the following code as it is and then manually remove all spaces and run. You will see no output.<br><br>
 
-        </p>
-    </div>
+                </p>
+            </div></div>
 
-    <div class="container">
-        <div id="code-editor" >
-            <form>
-<textarea id="test-code">
 
+        </div>
+        <div class="row">
+            <div class="code-editor-wrap well row">
+                <div class="code-editor" >
+                    <form>
+<textarea class="editor" id="test-code">
 def boil_water():
         #Temperature is in Celsius
         Temp=100
@@ -53,47 +65,123 @@ def boil_water():
 boil_water()
 </textarea><br/>
 
-            </form>
-            <button class="btn-result" type="button" onclick="runit()"><span>Run</span></button>
-            <button class="btn-refresh" type="button" onclick="refreshConsole()"><span>Refresh</span></button>
+                    </form>
+                    <div class="rows">
+                        <div class="col-xs-2">
+                            <button class="btn-well btn btn-trans" id="btn-hint" type="button" data-toggle="modal" data-target="#hintModal">Hint</button>
 
-        </div>
+                        </div>
 
+                        <div class="col-xs-7">
 
-        <div class="console-show">
-            <div id='bar'>
-                <div id='controls'>
-                    <div class='c'><p class='control'>&times;</p></div>
-                    <div class='c'><p class='control'>&minus;</p></div>
+                        </div>
+                        <div class="col-xs-3">
+                            <button class="btn btn-info btn-well" id="btn-run"  type="button" onclick="runit()" ><span>Run</span></button>
+                        </div>
+                    </div>
+
                 </div>
-                <p id='title'>Python Console</p>
-            </div>
-            <div id='screen'>
-                <p id="code-output">
 
-                    Output
-                </p>
+                <br><br>
+
+            </div>
+
+            <!-- Hint Modal -->
+            <div class="modal fade modal-wrap" id="hintModal" tabindex="-1" role="dialog" aria-labelledby="text-question" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="text-question">Title name</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
+                            </p>
+                            <div class="show-code "><code contentEditable="false">
+                                <p>function add(a, b) {</p>
+                                <p>  //interesting fun</p>
+                                <p>  return a + b;</p>
+                                <p>}</p></code>
+                            </div><br>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="code-editor-wrap well row">
+                <div class="code-editor" >
+                    <form>
+                        <p class="output-screen"  id="code-output">
+
+                            Output
+                        </p>
+
+                    </form>
+                    <div class=" rows ">
+                        <div class="col-xs-9"></div>
+                        <div class="col-xs-3">
+                            <button class="btn btn-danger btn-well" type="button" onclick="clearConsole()"><span>Clear</span></button>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+
+            </div>
+
+            <div>
+                <p id="code-remark" class="text-instructions"> </p>
+            </div>
+        </div>
+        <div id="go-next">
+            <p class="text-instructions">
+                Press Next to know how a function is defined.
+            </p>
+            <div class="btn-wrapper">
+                <button  class="btn btn-primary btn-center" type="button" data-toggle="modal" data-target="#points-modal" ><span>Continue</span></button>
             </div>
 
 
         </div>
+        <!-- Congrats Modal -->
+        <div class="modal fade modal-wrap" id="points-modal"  data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="text-congrats" aria-hidden="true" >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content container-fluid">
+
+                    <div class="modal-body">
+
+                        <div class=" rows ">
+                            <div class="col">
+                                <img id="img-checked" src="../img/checked.png" alt="Congratulations">
+                            </div>
+                        </div>
+
+                        <div class=" rows ">
+                            <div class="col heading text-center modal-text" id="modal-congrats-text">
+                                Congratulations
+                            </div>
+                        </div>
+
+                        <div class="rows">
+                            <div class="col text-center modal-text" id="modal-congrats-subtext" >
+                                You did it!
+                            </div>
+                        </div>
+
+                        <div class="rows ">
+                            <div class="col text-center modal-text">
+                                <button  type="button" id="btn-nextpage" class="btn" onclick="nextPage()">Continue</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
     </div>
-
-    <div id="working-code">
-
-        <p id="code-remark"></p>
-
-    </div>
-    <div id="go-next">
-        <p>
-            Press Next to know how a function is defined.
-        </p>
-        <button class="btn" type="button" onclick="nextPage()"><span>Next</span></button>
-
-
-    </div>
-
 </div>
-</body>
 <script src="../js/Level2-func/page3-func.js"></script>
+</body>
 </html>

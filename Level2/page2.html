@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Level 2</title>
+    <title>Level 1</title>
     <!--JQuery-->
     <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
@@ -16,47 +16,134 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+    <!--Font CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Cabin|Open+Sans" rel="stylesheet">
+
     <!--Project CSS files-->
-    <link rel="stylesheet" href="../css/code-format.css">
     <link rel="stylesheet" href="../css/editor-console.css">
-    <link rel="stylesheet" href="../css/elements-style.css">
-    <link rel="stylesheet" type="text/css" href="../css/code-style.css">
+    <link rel="stylesheet" href="../css/code-snippet.css">
+    <link rel="stylesheet" href="../css/modal-style.css">
+    <link rel="stylesheet" href="../css/button-style.css">
+    <link rel="stylesheet" href="../css/element-style.css">
+    <link rel="stylesheet" href="../css/code-format.css">
 
 
 </head>
 
 <body>
-<div id="page2">
-    <div id="section1">
-        <p> As a cook yourself, you must be quite well informed about the procedure of making a ginger tea.<br>
-            Let's list the recipe instructions here so that we know we are on the same page.</p>
+<div class="wrap">
+    <div class="content container-fluid">
+        <div class="row">
+            <p class="text-instructions heading">Heading</p>
+            <div><p id="section1">
+                <p class="text-instructions"> As a cook yourself, you must be quite well informed about the procedure of making a ginger tea.<br>
+                Let's list the recipe instructions here so that we know we are on the same page.</p>
 
-        <ol type="1">
-            <li>Boil water in a saucepan</li>
-            <li>Add tea powder and sugar together and add it to water and boil again</li>
-            <li>Add milk and boil again</li>
-            <li>Serve</li>
+                <ol type="1">
+                    <li class="text-instructions">Boil water in a saucepan</li>
+                    <li class="text-instructions">Add tea powder and sugar together and add it to water and boil again</li>
+                    <li class="text-instructions">Add milk and boil again</li>
+                    <li class="text-instructions">Serve</li>
+            </ol>
 
-        </ol>
-        <p><b>Look at the recipe carefully, is there any function that was defined in the last level and can be reused again today?</b></p>
-        <br>
-        <h4>Pick the function</h4>
-        <form action="#" id="form" name="proceed-form" >
-            <input title="choose-func" type="radio" name="choose-func" value="chop">chop_vegetables()
-            <input title="choose-func" type="radio" name="choose-func" value="boil">boil()
-            <input title="choose-func" type="radio" name="choose-func" value="bake">bake()
-        </form>
-        <button class="btn-result" type="button" onclick="return checkFunctionName();"><span>Check</span></button>
-        <p class="remark" id="radio-output"></p>
+                <p class="text-instructions"><b>Look at the recipe carefully, is there any function that was defined in the last level and can be reused again today?</b></p>
+                <br>
+                <h4>Pick the function</h4>
+            </div></div>
 
-        <div id="go-next">
-            <p>That’s why we love functions. We can reuse the same function any number of times, any where we like.</p>
-            <button class="btn" type="button" onclick="nextPage()"><span>Next</span></button>
+            <div class="radio" >
+                <form class="text-instructions" id="form" name="proceed-form" method="post">
+                    <label class="radio">
+                        <input title="choose-func" type="radio" name="choose-func" value="chop">chop_vegetables() <br>
+                    </label>
+                    <label class="radio">
+                        <input title="choose-func" type="radio" name="choose-func" value="boil">boil() <br>
+                    </label>
+                    <label class="radio">
+                        <input title="choose-func" type="radio" name="choose-func" value="bake">bake()
+                    </label>
+                </form>
+
+                <div class="btn btn-wrapper ">
+                    <button id="btn-test" type="button" onclick="return checkFunctionName();"><span>Check</span></button>
+                </div>
+
+                <p class="radio-remark text-instructions" id="radio-output"></p>
+            </div>
+            <div id="go-next">
+                <p class="text-instructions">That’s why we love functions. We can reuse the same function any number of times, any where we like.</p>
+            </div>
+
+        <!-- Hint Modal -->
+        <div class="modal fade modal-wrap" id="hintModal" tabindex="-1" role="dialog" aria-labelledby="text-question" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="text-question">Title name</h5>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
+                        </p>
+                        <div class="show-code "><code contentEditable="false">
+                            <p>function add(a, b) {</p>
+                            <p>  //interesting fun</p>
+                            <p>  return a + b;</p>
+                            <p>}</p></code>
+                        </div><br>
+                    </div>
+
+                </div>
+            </div>
         </div>
 
+
+
+    <div class="btn-wrapper">
+        <button  class="btn btn-primary btn-center" type="button" data-toggle="modal" data-target="#points-modal" ><span>Continue</span></button>
     </div>
 
+    <!-- Congrats Modal -->
+    <div class="modal fade modal-wrap" id="points-modal"  data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="text-congrats" aria-hidden="true" >
+        <div class="modal-dialog" role="document">
+            <div class="modal-content container-fluid">
+
+                <div class="modal-body">
+
+                    <div class=" rows ">
+                        <div class="col">
+                            <img id="img-checked" src="../img/checked.png" alt="Congratulations">
+                        </div>
+                    </div>
+
+                    <div class=" rows ">
+                        <div class="col heading text-center modal-text" id="modal-congrats-text">
+                            Congratulations
+                        </div>
+                    </div>
+
+                    <div class="rows">
+                        <div class="col text-center modal-text" id="modal-congrats-subtext" >
+                            You did it!
+                        </div>
+                    </div>
+
+                    <div class="rows ">
+                        <div class="col text-center modal-text">
+                            <button  type="button" id="btn-nextpage" class="btn" onclick="nextPage()">Continue</button>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
 </div>
-</body>
+</div>
 <script src="../js/Level2-func/page2-func.js"></script>
+</body>
 </html>
