@@ -14,15 +14,11 @@
 
 .modal-dialog {
     display: inline-block;
-    vertical-align: middle;
 }
 
 .modal-body{
     padding: 10%;
-    margin: 0;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
+
 }
 #points-modal{
 }

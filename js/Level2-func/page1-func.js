@@ -1,21 +1,24 @@
 /**
  * Created by pblead26 on 04-Mar-17.
  */
-
+var outputText = document.getElementById("code-output");
+var resultText = document.getElementById("code-remark");
 function showDivGoNext() {
     document.getElementById('go-next').style.visibility = "visible";
 }
 
 function nextPage() {
-    $(function() {
-        $("#page1").load("page2.html");
-    });   }
+   location.href="page2.html";
+    }
+
+function showRetry(textOnRetry) {
+    resultText.innerHTML = textOnRetry;
+}
 
 // output functions are configurable.  This one just appends some text
 // to a pre element.
 function outf(text) {
-    var outputText = document.getElementById("code-output");
-    var resultText = document.getElementById("code-remark");
+
 
     var out = outputText.innerHTML + text;
     outputText.innerHTML = out;
@@ -24,12 +27,12 @@ function outf(text) {
     var output = pattern.test(out);
 /*TODO : use case when variable being called is not even present */
     if(output.toString()==="true"){
-        resultText.innerHTML = "That is right!";
+        resultText.innerHTML = "Great job!";
         showDivGoNext();
     }
     else
     {
-        showRetry();
+        showRetry("Hey! The quantities are fixed for this recipe. Let's keep it that way?");
     }
 
 
@@ -47,6 +50,7 @@ function builtinRead(x) {
 // configure the output function
 // call Sk.importMainWithBody()
 function runit() {
+    resultText.innerHTML=" ";
     var userCode = document.getElementById("user-code").value;
     var PreDefinedCode = document.getElementById("predefined").value;
     var finalProg = userCode + "\n" + PreDefinedCode;
@@ -62,6 +66,7 @@ function runit() {
         },
         function(err) {
             console.log(err.toString());
+            showRetry("Did you declare all variables?");
         });
 }
 
@@ -69,6 +74,3 @@ function showHint() {
     document.getElementById('hint').style.visibility="visible";
 }
 
-function showRetry() {
-    document.getElementById('retry').style.visibility="visible";
-}
