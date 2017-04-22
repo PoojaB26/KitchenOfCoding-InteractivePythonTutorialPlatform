@@ -14,8 +14,16 @@ function outf(text) {
     var resultText = document.getElementById("code-remark");
 
     outputText.innerHTML = outputText.innerHTML + text;
-    //TODO: CHECK FOR CORRECT CODE HERE
-    showSection3();
+
+    var output = outputText.innerHTML;
+
+    if(isNaN(output))
+        resultText.innerHTML = "Hey, did you follow the 4th instruction. It's the most important one.";
+    else{
+        resultText.innerHTML = "You are getting good at this!";
+        showSection3();
+
+    }
 
 }
 
@@ -31,8 +39,10 @@ function builtinRead(x) {
 // configure the output function
 // call Sk.importMainWithBody()
 function runit() {
+    var userCode = document.getElementById("user-code").value;
+    var PreDefinedCode = document.getElementById("predefined").value;
 
-    var finalProg =  document.getElementById("test-code").value;
+    var finalProg = userCode + "\n" + PreDefinedCode;
     var mypre = document.getElementById("code-output");
     mypre.innerHTML = "";
     Sk.pre = "code-output";

@@ -86,7 +86,7 @@
 
                 Take note of the following instructions:<br>
                 -   Function name must be boil() as we are going to use this function for later lessons<br>
-                -   Inside the function, declare a variable named <i>output</i> with any value and print “boiling successful”<br>
+                -   Inside the function, declare a variable named <i>output</i> with any numerical value and print “boiling successful”<br>
                 -   You can add more print statements as well.<br>
                 -   At the end , just add the following code :<br>
                 -   <i class="code text-instructions"> return output</i><br>
@@ -96,7 +96,7 @@
             <div class="code-editor-wrap well row">
                 <div class="code-editor" >
                     <form>
-<textarea class="editor" id="test-code">
+<textarea class="editor" id="user-code">
 #Write code here
 </textarea><br/>
 
@@ -120,6 +120,10 @@
                 <br><br>
 
             </div>
+            <textarea hidden id="predefined">
+test = boil()
+print (test)
+            </textarea>
 
             <!-- Hint Modal -->
             <div class="modal fade modal-wrap" id="hintModal" tabindex="-1" role="dialog" aria-labelledby="text-question" aria-hidden="true">
@@ -146,7 +150,7 @@
                 </div>
             </div>
 
-            <div class="code-editor-wrap well row">
+            <div hidden class="code-editor-wrap well row">
                 <div class="code-editor" >
                     <form>
                         <p class="output-screen"  id="code-output">
@@ -195,13 +199,13 @@
 
                         <div class=" rows ">
                             <div class="col heading text-center modal-text" id="modal-congrats-text">
-                                Congratulations
+                                Sweet!
                             </div>
                         </div>
 
                         <div class="rows">
                             <div class="col text-center modal-text" id="modal-congrats-subtext" >
-                                You passed Level 1 of Kitchen of Coding!
+                                You are a pro!
                             </div>
                         </div>
 
