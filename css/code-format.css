@@ -8,7 +8,7 @@ p
 }
 
 #section2, #radio-output, #go-next, #section3, #retry{
-    visibility: hidden;
+    display: none;
 }
 
 

@@ -71,7 +71,7 @@ function runit() {
 }
 
 function showHint() {
-    document.getElementById('hint').style.visibility="visible";
+    document.getElementById('hint').style.display = "block";
 }
 
 function clearConsole(){

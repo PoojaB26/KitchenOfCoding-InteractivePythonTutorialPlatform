@@ -51,17 +51,17 @@ function checkConstant1(){
 }
 
 function showRemark(){
-    constOutput.style.visibility = 'visible';
+    constOutput.style.display = "block";
 }
 function showRemark1(){
-    constOutput1.style.visibility = 'visible';
+    constOutput1.style.display = "block";
 }
 function next(){
-    section2.style.visibility = 'visible';
+    section2.style.display = "block";
 }
 
 function next1() {
-    section3.style.visibility = 'visible';
+    section3.style.display = "block";
 }/**
  * Created by meow on 4/15/2017.
  */

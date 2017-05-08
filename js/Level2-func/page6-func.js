@@ -69,7 +69,7 @@ function runit() {
 var section2 = document.getElementById('section2');
 
 function showSection2(){
-    section2.style.visibility = 'visible';
+    section2.style.display = "block";
 }
 /**
  * Created by meow on 4/12/2017.

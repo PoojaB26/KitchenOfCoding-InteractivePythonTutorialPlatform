@@ -92,14 +92,14 @@ function checkAnswer(){
 }
 
 function showRemark(){
-    constOutput.style.visibility = 'visible';
+    constOutput.style.display = "block";
 }
 
 function showSection2(){
-    section2.style.visibility = 'visible';
+    section2.style.display = "block";
 }
 function showSection3() {
-    document.getElementById('section3').style.visibility = "visible";
+    document.getElementById('section3').style.display = "block";
 }
 function clearConsole(){
     var outputText = document.getElementById("code-output");

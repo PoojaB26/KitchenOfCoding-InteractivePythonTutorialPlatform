@@ -29,11 +29,11 @@ function checkConstant(){
 }
 
 function showRemark(){
-    constOutput.style.visibility = 'visible';
+    constOutput.style.display = "block";
 }
 
 function next(){
-    section2.style.visibility = 'visible';
+    section2.style.display = "block";
 }
 
 function nextPage() {

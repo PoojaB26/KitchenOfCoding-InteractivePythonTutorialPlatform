@@ -3,7 +3,7 @@
  */
 
 function showDiv() {
-    document.getElementById('go-next').style.visibility = "visible";
+    document.getElementById('go-next').style.display = "block";
 }
 
 function nextPage() {

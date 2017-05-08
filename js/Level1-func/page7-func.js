@@ -4,7 +4,8 @@
 
 
 function showDivSection2() {
-    document.getElementById('section2').style.visibility = "visible";
+    document.getElementById("section2").style.display = "block";
+
 }
 function nextPage() {
     location.href="../Level2/page1.html";

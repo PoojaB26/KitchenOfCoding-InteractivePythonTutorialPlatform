@@ -37,67 +37,68 @@
         <div class="row">
             <p class="text-instructions heading">Heading</p>
             <div>
-                <p class="text-instructions">So there you go. You learn what <i class="code">constants</i> are in a program.<br>
-                    <br>
-                    Now lets get back to boiling. <br>
-                    We need <b>water</b> for boiling<br>
 
-                    If I’m making tea for 2 people,<br>
-                    I will be needing <b>2 cups</b> of water.<br><br>
+                    <p class="text-instructions">
+                        Now imagine you are a chef helper in a huge restaurant. And today, your primary job is to boil.  That’s a pretty tiring task, right?<br>
 
-                    But when I’m making rice for 4 people,<br>
-                    I might need <b>4 glasses</b> of water<br><br>
+                        The chef will not be telling you the instructions to boil, every time you are asked to boil something. You are expected to remember the method once told.<br>
 
-                    Or when I’m making chutney for 2 people,<br>
-                    I will need <b>1 teaspoon</b> of water<br><br>
-
-                    So one dish may require 2 cups of water, another dish may require 5.
-                    You see, how the quantity could vary?<br>
-                    In coding language, we can say water is a <i class="code">Variable</i>. It varies for dish to dish. <br><br>
-
-                    Now that you know about variables and constants, can you tell me which of the following is a variable or constant?<br>
-
-                    If it is a <i class="code">variable</i>, write <b>True.</b> If it is a <i class="code">constant</i>, write <b>False</b></p>
-                <p class="text-instructions text-info">Note: Values in Python are case sensitive. True is not the same <i><b>true</b></i> or <i><b>tRUe.</b></i> So keep that in mind.</p>
+                        The chef will give you the item and your task is to just put it on stove and boil for 10 minutes at 100 degree celsius and give the boiled item to the next person.<br><br>
 
 
-                <p class="text-instructions text-muted">
-                    The first one has been done for you<br>
-                </p>
-                <div id="working-code">
+                        Lets start rewriting your boiling task as a function
+                    </p>
+                    <div class="show-code"><code contentEditable="false">
+                        <p>def boil_water():</p>
+                        <p>    liquid = input()</p>
+                        <p>    Temp = 100</p>
+                        <p>    print (“boiling completed”)</p>
+                        <p>    print (liquid)
+                        </p></code>
+                    </div><br>
 
+                    <p class="text-instructions">
+                        <i class="code">input()</i> is a pre-defined function that takes in values from the user using your program.<br>
+                        So if you were to use water as a variable, the user will decide how much water you are to use.<br><br>
 
-                    <form>
-                       <textarea title="predefined" id="predefined" hidden>
-
-print(oil)
-print(cooking_vessel)
-print(salt)
-
-</textarea><br/>
-
-                    </form>
-
+                        For example, if you are in a restaurant that only makes omelettes. And you let the customer decide how many eggs they want in a omelette. Then you are taking input from the customer.
+                        <br><br>
+                        So what’s the result of the program we wrote today.<br>
+                        We took a <i class="code">variable</i> cold water as <i class="code">input</i>, we put a function <i class="code">boil_water()</i> and got hot water as an <i class="code">output</i>.<br>
+                        I hope you enjoyed today’s lesson.
+                        <br>
+                    </p>
+                    <div class="btn-wrapper">
+                        <button  class="btn btn-primary btn-center" type="button" data-toggle="modal" data-target="#points-modal" ><span>Continue</span></button>
+                    </div>
                 </div>
 
-
-            </div>
-
         </div>
-        <div class="row">
+        <div hidden class="row">
             <div class="code-editor-wrap well row">
                 <div class="code-editor" >
                     <form>
 <textarea class="editor" id="user-code">
-oil = True
-cooking_vessel =
-salt =
+#Quantity is in cups
+Water = 1
+boil_water()
+
+#Quantity is in ml
+Water = 3
+#call the boiling function after this line
+
+
+#Quantity is in litres
+Water = 1.5
+#call the boiling function after this line
+
+
 </textarea><br/>
 
                     </form>
                     <div class="rows">
                         <div class="col-xs-2">
-                            <button class="btn-well btn btn-trans" id="btn-hint" type="button" data-toggle="modal" data-target="#hintModal" style="display: none">Hint</button>
+                            <button class="btn-well btn btn-trans" id="btn-hint" type="button" data-toggle="modal" data-target="#hintModal">Hint</button>
 
                         </div>
 
@@ -110,6 +111,12 @@ salt =
                     </div>
 
                 </div>
+                <textarea id="predefined" hidden>
+
+def boil_water():
+                print("Boiling water is successful")
+
+</textarea>
                 <br><br>
 
             </div>
@@ -137,11 +144,7 @@ salt =
                 </div>
             </div>
 
-            <div>
-                <p class="text-instructions" id="code-remark"> </p>
-            </div>
-
-            <div hidden class="code-editor-wrap well row">
+            <div class="code-editor-wrap well row">
                 <div class="code-editor" >
                     <form>
                         <p class="output-screen"  id="code-output">
@@ -160,15 +163,48 @@ salt =
                 <br><br>
 
             </div>
+
+            <div>
+                <p id="code-remark" class="text-instructions"> </p>
+            </div>
         </div>
 
-        <div id="go-next">
+        <div id="section2">
+
+            <p class="text-instructions">
+                Now imagine you are a chef helper in a huge restaurant. And today, your primary job is to boil.  That’s a pretty tiring task, right?<br>
+
+                The chef will not be telling you the instructions to boil, every time you are asked to boil something. You are expected to remember the method once told.<br>
+
+                The chef will give you the item and your task is to just put it on stove and boil for 10 minutes at 100 degree celsius and give the boiled item to the next person.<br><br>
+
+
+                Lets start rewriting your boiling task as a function
+            </p>
+            <div class="show-code"><code contentEditable="false">
+                <p>def boil_water():</p>
+                <p>    liquid = input()</p>
+                <p>    Temp = 100</p>
+                <p>    print (“boiling completed”)</p>
+                <p>    print (liquid)
+                </p></code>
+            </div><br>
+
+            <p class="text-instructions">
+                <i class="code">input()</i> is a pre-defined function that takes in values from the user using your program.<br>
+                So if you were to use water as a variable, the user will decide how much water you are to use.<br><br>
+
+                For example, if you are in a restaurant that only makes omelettes. And you let the customer decide how many eggs they want in a omelette. Then you are taking input from the customer.
+                <br><br>
+                So what’s the result of the program we wrote today.<br>
+                We took a <i class="code">variable</i> cold water as <i class="code">input</i>, we put a function <i class="code">boil_water()</i> and got hot water as an <i class="code">output</i>.<br>
+                I hope you enjoyed today’s lesson.
+                <br>
+            </p>
             <div class="btn-wrapper">
                 <button  class="btn btn-primary btn-center" type="button" data-toggle="modal" data-target="#points-modal" ><span>Continue</span></button>
             </div>
         </div>
-
-
 
         <!-- Congrats Modal -->
         <div class="modal fade modal-wrap" id="points-modal"  data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="text-congrats" aria-hidden="true" >
@@ -191,7 +227,7 @@ salt =
 
                         <div class="rows">
                             <div class="col text-center modal-text" id="modal-congrats-subtext" >
-                                You just learned to declare variables with a value.
+                                You passed Level 1 of Kitchen of Coding!
                             </div>
                         </div>
 
@@ -211,6 +247,6 @@ salt =
 
     </div>
 </div>
-<script type="text/javascript" src="../js/Level1-func/page3-func.js"></script>
+<script type="text/javascript" src="../js/Level1-func/page7-func.js"></script>
 </body>
 </html>
