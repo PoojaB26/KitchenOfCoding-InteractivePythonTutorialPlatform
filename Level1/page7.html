@@ -142,44 +142,14 @@ def boil_water():
             <div>
                 <p id="code-remark" class="text-instructions"> </p>
             </div>
-        </div>
 
-        <div id="section2">
-
-            <p class="text-instructions">
-                Now imagine you are a chef helper in a huge restaurant. And today, your primary job is to boil.  That’s a pretty tiring task, right?<br>
-
-                The chef will not be telling you the instructions to boil, every time you are asked to boil something. You are expected to remember the method once told.<br>
-
-                The chef will give you the item and your task is to just put it on stove and boil for 10 minutes at 100 degree celsius and give the boiled item to the next person.<br><br>
-
-
-                Lets start rewriting your boiling task as a function
-            </p>
-            <div class="show-code"><code contentEditable="false">
-                <p>def boil_water():</p>
-                <p>    liquid = input()</p>
-                <p>    Temp = 100</p>
-                <p>    print (“boiling completed”)</p>
-                <p>    print (liquid)
-                </p></code>
-            </div><br>
-
-            <p class="text-instructions">
-                <i class="code">input()</i> is a pre-defined function that takes in values from the user using your program.<br>
-                So if you were to use water as a variable, the user will decide how much water you are to use.<br><br>
-
-                For example, if you are in a restaurant that only makes omelettes. And you let the customer decide how many eggs they want in a omelette. Then you are taking input from the customer.
-                <br><br>
-                So what’s the result of the program we wrote today.<br>
-                We took a <i class="code">variable</i> cold water as <i class="code">input</i>, we put a function <i class="code">boil_water()</i> and got hot water as an <i class="code">output</i>.<br>
-                I hope you enjoyed today’s lesson.
-                <br>
-            </p>
-            <div class="btn-wrapper">
-                <button  class="btn btn-primary btn-center" type="button" data-toggle="modal" data-target="#points-modal" ><span>Continue</span></button>
+            <div id="go-next">
+                <div class="btn-wrapper">
+                    <button  class="btn btn-primary btn-center" type="button" data-toggle="modal" data-target="#points-modal" ><span>Continue</span></button>
+                </div>
             </div>
         </div>
+
 
         <!-- Congrats Modal -->
         <div class="modal fade modal-wrap" id="points-modal"  data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="text-congrats" aria-hidden="true" >
@@ -196,13 +166,13 @@ def boil_water():
 
                         <div class=" rows ">
                             <div class="col heading text-center modal-text" id="modal-congrats-text">
-                                Congratulations
+                                Hey!
                             </div>
                         </div>
 
                         <div class="rows">
                             <div class="col text-center modal-text" id="modal-congrats-subtext" >
-                                You passed Level 1 of Kitchen of Coding!
+                                You are doing good!
                             </div>
                         </div>
 

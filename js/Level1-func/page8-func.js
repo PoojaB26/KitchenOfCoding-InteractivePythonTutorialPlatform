@@ -7,7 +7,7 @@ function showDivGoNext() {
     document.getElementById('go-next').style.display = "block";
 }
 function nextPage() {
-    location.href="page8.html"
+    location.href="../Level2/page1.html"
     }
 
 // output functions are configurable.  This one just appends some text
