@@ -1,16 +1,15 @@
 # Kitchen Of Coding
-Mozilla Project #TeachTheWeb<br>
-[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)<br>
+Kitchen of Coding, born at Mozilla #helloweb hackathon 2016 organised by the Mozilla community, is an online interactive platform, that aims to teach programming concepts and languages to home-makers and housewives, in the form of recipes.<br>
+
+## Features 
+* **Introduction to Python** - Python is a great first language because of its simple grammar and how close it is to the English language. 
+
+* **Programming concepts divided into levels** At the moment, we have curated content for 7 levels where each level teaches a couple of new OOP concepts along with basic Python syntax.
+
+* **Scores!** - Score system to motivate student users!
+
+
 ![forthebadge](https://img.shields.io/badge/stage-development-orange.svg)
-
-#### Update 10 April 2017 : Bootstrap 3 added
-New changes/replacements 
-
-| **Previous**  |  **Bootstrap**   |
-|---|---|
-|```class="footnote"```   | ```class="text-muted"```  |
-| ```class="note"```  | ```class="text-info"```  |
-|   |   |
 
 
 ## Naming convention
@@ -57,3 +56,4 @@ Example : ```<div id="page2"></div>```
 
 - div wrap for code snippet section has class name ```show-code```
 
+[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)<br>
