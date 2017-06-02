@@ -3,6 +3,13 @@ body {
     font-family: 'Open Sans', sans-serif;
 
 }
+
+.font{
+    font-family: 'Open Sans', sans-serif;
+    font-size: medium;
+}
+
+
 .radio{
     display: block;
     font-family: 'Open Sans', sans-serif;
