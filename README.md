@@ -1,6 +1,7 @@
 # Kitchen Of Coding
 Mozilla Project #TeachTheWeb
-[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
+<center>[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)</center>
+<br><center>![version](https://img.shields.io/badge/version-beta-orange.svg)
 
 #### Update 10 April 2017 : Bootstrap 3 added
 New changes/replacements 
