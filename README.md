@@ -1,5 +1,6 @@
-# Eat-Drink-Code
+# Kitchen Of Coding
 Mozilla Project #TeachTheWeb
+[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 
 #### Update 10 April 2017 : Bootstrap 3 added
 New changes/replacements 
