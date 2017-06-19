@@ -4,7 +4,7 @@ Kitchen of Coding, born at Mozilla #helloweb hackathon 2016 organised by the Moz
 ## Features 
 * **Introduction to Python** - Python is a great first language because of its simple grammar and how close it is to the English language. 
 
-* **Programming concepts divided into levels** - At the moment, we have curated content for 7 levels where each level teaches a couple of new OOP concepts along with basic Python syntax.
+* **Programming concepts divided into levels** - At the moment, we have curated content for 10 levels where each level teaches a couple of new OOP concepts along with basic Python syntax.
 
 * **Online Python interpreter** - Students can test their code in an inbrowser interpreter of Python, built by Skulpt
 
