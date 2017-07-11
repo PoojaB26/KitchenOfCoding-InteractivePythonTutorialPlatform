@@ -1,3 +1,5 @@
+![forthebadge](https://img.shields.io/badge/stage-development-orange.svg)
+
 # Kitchen Of Coding
 Kitchen of Coding, born at Mozilla #helloweb hackathon 2016 organised by the Mozilla community, is an online interactive platform, that aims to teach programming concepts and languages to home-makers and housewives, in the form of recipes.<br>
 
@@ -11,7 +13,6 @@ Kitchen of Coding, born at Mozilla #helloweb hackathon 2016 organised by the Moz
 * **Scores!** - Score system to motivate student users!
 
 
-![forthebadge](https://img.shields.io/badge/stage-development-orange.svg)
 
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)<br>
